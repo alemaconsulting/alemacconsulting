@@ -3,9 +3,9 @@ const nextConfig = {
   images: {
     remotePatterns: [
       {
-        protocol: "https",
-        hostname: "alema.consulting.de",
-        port: "",
+        protocol: 'https',
+        hostname: 'alema.consulting.de',
+        port: '',
       },
     ],
   },
