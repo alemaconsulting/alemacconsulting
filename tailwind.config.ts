@@ -9,6 +9,7 @@ const config: Config = {
 				primeText: 'rgb(40, 53, 72)',
 				borderGrey: 'rgb(188, 188, 188)',
 				paleBlue: 'rgb(200, 227, 241)',
+				accentBlue: 'rgb(63, 145, 203)',
 			},
 			backgroundImage: {
 				verticalBgGrad:
