@@ -6,8 +6,13 @@ type PropsType = {
 
 const BurgerIcon = ({ setIsModalShown }: PropsType) => {
   return (
-    <div onClick={() => setIsModalShown(true)}>
-      <img src="../assets/icons/Burger_icon.svg" alt="" />
+    <div className="md:w-[33%]">
+      <img
+        className="ml-auto"
+        onClick={() => setIsModalShown(true)}
+        src="../assets/icons/Burger_icon.svg"
+        alt=""
+      />
     </div>
   );
 };
