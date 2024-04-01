@@ -1,19 +1,12 @@
-import { Dispatch, SetStateAction } from 'react';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
-type PropsType = {
-  setIsModalShown: Dispatch<SetStateAction<boolean>>;
-};
-
-const BurgerIcon = ({ setIsModalShown }: PropsType) => {
+const BurgerIcon = () => {
+  const pathname = usePathname();
   return (
-    <div className="md:w-[33%]">
-      <img
-        className="ml-auto"
-        onClick={() => setIsModalShown(true)}
-        src="../assets/icons/Burger_icon.svg"
-        alt=""
-      />
-    </div>
+    <Link className="block md:w-[33%]" href={`${pathname}?modal=true`}>
+      <img className="ml-auto" src="../assets/icons/Burger_icon.svg" alt="" />
+    </Link>
   );
 };
 

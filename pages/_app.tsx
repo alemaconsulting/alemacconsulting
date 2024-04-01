@@ -3,9 +3,12 @@ import type { AppProps } from 'next/app';
 import MainLayout from '@/layouts/mainLayout';
 import '../styles/globals.css';
 
-const MyApp = ({ Component, pageProps }: AppProps) => {
+type test = { searchParams: Record<string, string> | null | undefined };
+type PageProps = AppProps & test;
+
+const MyApp = ({ Component, pageProps, searchParams }: PageProps) => {
   return (
-    <MainLayout>
+    <MainLayout searchParams={searchParams}>
       <Component {...pageProps} />
     </MainLayout>
   );
