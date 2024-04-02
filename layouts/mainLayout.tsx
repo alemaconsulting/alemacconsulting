@@ -1,5 +1,6 @@
 import Head from 'next/head';
 
+import Link from 'next/link';
 import { useSearchParams } from 'next/navigation';
 
 import Footer from '@/components/footer/footer';
@@ -8,11 +9,18 @@ import ModalNav from '@/components/modalNav/modalNav';
 
 type PropsType = {
   children: React.ReactElement;
-  searchParams: Record<string, string> | null | undefined;
+  linksData: { slug: string; title: string }[];
 };
 
-const MainLayout = ({ children }: PropsType) => {
+const MainLayout = ({ children, linksData }: PropsType) => {
   const isModalShown = useSearchParams().get('modal') && window.innerWidth < 1024;
+  const mappedLinks = linksData.map((link) => {
+    return (
+      <Link href={link.slug} key={link.slug}>
+        {link.title}
+      </Link>
+    );
+  });
   return (
     <>
       <Head>
@@ -23,7 +31,10 @@ const MainLayout = ({ children }: PropsType) => {
         <div className="b-2-[grey] relative flex w-full flex-col p-2 2xl:container md:p-5 lg:p-10">
           {isModalShown ? <ModalNav /> : null}
           <Header />
-          <main className="flex-grow-1 h-full">{children}</main>
+          <main className="flex-grow-1 h-full">
+            <div>{mappedLinks}</div>
+            {children}
+          </main>
           <Footer />
         </div>
       </div>
