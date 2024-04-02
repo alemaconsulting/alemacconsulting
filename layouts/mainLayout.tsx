@@ -20,7 +20,7 @@ const MainLayout = ({ children }: PropsType) => {
         <title>Alema consulting</title>
       </Head>
       <div className="flex h-[100dvh] w-full justify-center overflow-hidden bg-gradBacking bg-verticalBgGrad">
-        <div className="b-2-[grey] relative flex w-full flex-col p-2 2xl:container">
+        <div className="b-2-[grey] relative flex w-full flex-col p-2 2xl:container md:p-5 lg:p-10">
           {isModalShown ? <ModalNav /> : null}
           <Header />
           <main className="flex-grow-1 h-full">{children}</main>
