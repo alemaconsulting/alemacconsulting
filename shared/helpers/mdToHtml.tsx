@@ -23,12 +23,6 @@ type propsType = { mdSource: string };
 
 const MdToHtml = ({ mdSource }: propsType) => {
   const overrides: Overrides = {
-    h1: { component: 'h1', props: { className: 'text-4xl font-bold my-4' } },
-    h2: { component: 'h2', props: { className: 'text-2xl font-bold my-4' } },
-    h3: { component: 'h3', props: { className: 'text-lg font-bold my-2' } },
-    h4: { component: 'h4', props: { className: 'text-lg font-bold my-2' } },
-    h5: { component: 'h5', props: { className: 'text-lg font-bold my-2' } },
-    h6: { component: 'h6', props: { className: 'text-lg font-bold my-2' } },
     pre: {
       component: 'pre',
       props: { className: 'bg-gray-100 p-4 rounded-md overflow-x-auto' },
@@ -42,13 +36,6 @@ const MdToHtml = ({ mdSource }: propsType) => {
         className: 'text-blue-500 hover:underline',
         role: 'link',
         'aria-label': 'external link',
-      },
-    },
-    ul: {
-      component: 'ul',
-      props: {
-        className:
-          'list-disc my-4 ml-4 list-image-checkmark flex flex-col sm:grid sm:grid-cols-2 gap-y-6 sm:w-3/4 sm:mx-auto sm:justify-items-start sm:w-full',
       },
     },
     ol: { component: 'ol', props: { className: 'list-decimal my-4 ml-8' } },

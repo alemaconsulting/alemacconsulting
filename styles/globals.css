@@ -20,4 +20,7 @@ body {
   .routeLink {
     @apply hover:text-accentPink block h-full w-full truncate text-xl leading-10 transition-all duration-300 hover:text-[21px]
   }
+  .contentSectionWrapper {
+    @apply w-full py-5 font-bold sm:rounded-lg sm:border-2 sm:border-borderGrey sm:bg-gradBacking sm:bg-horizontalBgGrad sm:px-10 sm:py-4 xl:px-16 xl:py-8
+  }
 }
