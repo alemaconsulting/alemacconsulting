@@ -17,4 +17,7 @@ body {
   .contentUL {
     @apply ml-6 mt-3 list-disc text-base sm:ml-9 sm:text-lg sm:font-extrabold
   }
+  .routeLink {
+    @apply hover:text-accentPink block h-full w-full truncate text-xl leading-10 transition-all duration-300 hover:text-[21px]
+  }
 }

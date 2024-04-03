@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 type PropsType = {
   closeModal: () => void;
@@ -6,12 +7,14 @@ type PropsType = {
 };
 
 const NavBlock = ({ closeModal, linksData }: PropsType) => {
+  const pathName = usePathname();
+  const isActiveLink = (slug: string) => pathName === slug;
   const mappedLinks = linksData.map((link) => {
     return (
       <li key={link.slug} className="h-11 w-full border-t-2 border-borderGrey text-center">
         <Link
           href={link.slug}
-          className="block h-full w-full truncate text-base font-bold leading-10"
+          className={`routeLink font-bold ${isActiveLink(`/${link.slug}`) ? 'text-brightBlue' : ''}`}
         >
           {link.title}
         </Link>
@@ -26,7 +29,10 @@ const NavBlock = ({ closeModal, linksData }: PropsType) => {
       </div>
       <ul className="mt-[72px] border-b-2 border-borderGrey">
         <li className="h-11 w-full border-t-2 border-borderGrey text-center">
-          <Link href="/" className="block h-full w-full truncate text-base font-bold leading-10">
+          <Link
+            href="/"
+            className={`routeLink font-bold ${isActiveLink('/') ? 'text-brightBlue' : ''}`}
+          >
             Alema consulting
           </Link>
         </li>

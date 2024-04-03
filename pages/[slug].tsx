@@ -14,11 +14,7 @@ const ContentPage = ({ postMetadata, content, allPostsData }: PropsType) => {
   const pageContent = content && postMetadata ? content : '<div>No such page...</div>';
   return (
     <MainLayout linksData={linksData}>
-      <>
-        <div>
-          <MdToHtml mdSource={pageContent} />
-        </div>
-      </>
+      <MdToHtml mdSource={pageContent} />
     </MainLayout>
   );
 };
