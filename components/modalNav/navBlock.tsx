@@ -23,7 +23,7 @@ const NavBlock = ({ closeModal, linksData }: PropsType) => {
   });
 
   return (
-    <nav className="absolute right-0 top-0 z-20 h-screen w-[250px] cursor-auto rounded-bl-xl rounded-tl-xl bg-paleBlue px-6 py-3">
+    <nav className="absolute right-0 top-0 z-20 w-[250px] cursor-auto rounded-bl-xl rounded-tl-xl bg-paleBlue px-6 py-3">
       <div onClick={closeModal} className="absolute right-[20px] top-[20px] z-20">
         <img src="../assets/icons/close_icon.svg" alt="" />
       </div>
