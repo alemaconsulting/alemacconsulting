@@ -10,6 +10,8 @@ const config: Config = {
 				borderGrey: 'rgb(188, 188, 188)',
 				paleBlue: 'rgb(200, 227, 241)',
 				accentBlue: 'rgb(63, 145, 203)',
+				accentPink: 'rgb(213, 169, 229)',
+				checkGreen: 'rgb(27, 239, 86)',
 			},
 			backgroundImage: {
 				verticalBgGrad:

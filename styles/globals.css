@@ -9,3 +9,12 @@ body {
   line-height: 1.6;
   color: #333;
 }
+
+@layer components {
+  .checkmarkedHeader {
+    @apply relative before:border-checkGreen before:absolute before:left-[-20px] before:top-[6px] before:h-[10px] before:w-[17px] before:rotate-[-50deg] before:rounded-sm before:border-b-[4px] before:border-l-[4px] before:content-[''] sm:before:w-[25px] sm:before:h-[15px] sm:before:border-b-[5px] sm:before:border-l-[5px] sm:before:top-[2px] sm:before:left-[-35px] text-lg font-extrabold sm:ml-3 sm:text-2xl
+  }
+  .contentUL {
+    @apply ml-6 mt-3 list-disc text-base sm:ml-9 sm:text-lg sm:font-extrabold
+  }
+}
