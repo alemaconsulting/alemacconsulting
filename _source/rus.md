@@ -6,106 +6,111 @@ author: "tedzury"
 ---
 
 <section className="contentSectionWrapper">
-  <h1 className="text-center text-lg lg:font-extrabold">Alema Consulting</h1>
-  <p className="mt-5 text-center text-lg lg:font-extrabold">
-    Since 2012, we have been offering management consultancy in a wide range of business areas:
-  </p>
-  <div className="ml-5 mt-5 sm:mt-10">
-    <h3 className="checkmarkedHeader">Product and supplier search </h3>
-    <ul className="contentUL">
-      <li>Product search</li>
-      <li>Global supplier search</li>
-      <li>Supplier management</li>
-      <li>Invitations to tender</li>
-    </ul>
-  </div>
-  <div className="ml-5 mt-5">
-    <h3 className="checkmarkedHeader">Calculations of all types</h3>
-    <ul className="contentUL">
-      <li>Financial calculations</li>
-      <li>Loan calculator</li>
-      <li>Profitability calculator</li>
-      <li>Liquidity calculator</li>
-      <li>EKS form (income from self-employment)</li>
-      <li>Revenue surplus calculator</li>
-      <li>Profit/loss calculator</li>
-      <li>Calculations for short-term to long-term projects</li>
-      <li>Net/gross calculator for employees</li>
-      <li>Net/gross calculator for employers</li>
-      <li>Plus many more on request</li>
-    </ul>
-  </div>
-  <div className="ml-5 mt-5">
-    <h3 className="checkmarkedHeader">Business plans</h3>
-    <ul className="contentUL">
-      <li>Establishing a new company</li>
-      <li>New projects</li>
-      <li>Getting a bank loan</li>
-      <li>Major purchases</li>
-    </ul>
-  </div>
-  <div className="ml-5 mt-5">
-    <h3 className="checkmarkedHeader">Starting your own busines</h3>
-    <ul className="contentUL">
-      <li>Support for business start-ups</li>
-      <li>Legal forms</li>
-      <li>Calculations</li>
-      <li>Preparation of business plans</li>
-    </ul>
-  </div>
-  <div className="ml-5 mt-5">
-    <h3 className="checkmarkedHeader">Presentations </h3>
-    <ul className="contentUL">
-      <li>For customers</li>
-      <li>Sales and distribution</li>
-      <li>For investors</li>
-    </ul>
-  </div>
-  <div className="ml-5 mt-5">
-    <h3 className="checkmarkedHeader">Excel spreadsheets</h3>
-    <ul className="contentUL">
-      <li>Organisation of business processes</li>
-      <li>Overview of your transactions</li>
-      <li>Coaching</li>
-    </ul>
-  </div>
-  <div className="ml-5 mt-5">
-    <h3 className="checkmarkedHeader">Translations of all types</h3>
-    <ul className="contentUL">
-      <li>German</li>
-      <li>English</li>
-      <li>Russian</li>
-      <li>Spanish</li>
-      <li>Other languages available on request</li>
-    </ul>
-  </div>
-  <div className="ml-5 mt-5">
-    <h3 className="checkmarkedHeader">Business and private correspondence</h3>
-    <ul className="contentUL">
-      <li>Forms</li>
-      <li>Correspondence</li>
-      <li>
-        Business correspondence:
+      <h1 className="text-center text-lg lg:font-extrabold">Alema Consulting</h1>
+      <p className="mt-5 text-center text-lg lg:font-extrabold">
+        С 2012 года мы предлагаем широкий спектр бизнес-услуг и консультаций во всех сферах бизнеса:
+      </p>
+      <div className="ml-5 mt-5 sm:mt-10">
+        <h3 className="checkmarkedHeader">Поиск поставщиков и производителей</h3>
         <ul className="contentUL">
-          <li>Queries</li>
-          <li>Complaints</li>
-          <li>Claims</li>
-          <li>Orders</li>
-          <li>Negotiations</li>
+          <li>Услуги по поиску любой продукции</li>
+          <li>Поиск поставщиков и производителей по всему миру</li>
+          <li>Менеджмент отношений с поставщиками</li>
+          <li>Организация и проведение тендеров</li>
         </ul>
-      </li>
-    </ul>
-  </div>
-  <div className="ml-5 mt-5">
-    <h3 className="checkmarkedHeader">Market research</h3>
-    <ul className="contentUL">
-      <li>Product research and analysis</li>
-      <li>Branch analysis</li>
-      <li>Market analysis</li>
-      <li>Marketing research</li>
-      <li>Analysis of competitors</li>
-      <li>Analysis of target groups</li>
-      <li>Site/location analysis</li>
-    </ul>
-  </div>
-</section>
+      </div>
+      <div className="ml-5 mt-5">
+        <h3 className="checkmarkedHeader">Калькуляция и расчёты</h3>
+        <ul className="contentUL">
+          <li>Планово-финансовая калькуляция</li>
+          <li>Расчёт кредитования</li>
+          <li>Калькуляция рентабельности</li>
+          <li>Калькуляция ликвидности</li>
+          <li>Заполнение документа EKS (подсчёт расходов и доходов для начинающих свой бизнес)</li>
+          <li>Расчёт прибыли или убытков</li>
+          <li>Вычисление доходов и расходов</li>
+          <li>Планово-финансовая калькуляция для краткосрочных и долгосрочных проектов</li>
+          <li>Расчёт нетто-зарплаты и отчислений для работников по найму</li>
+          <li>Расчёт отчислений в социальные кассы для работодателей</li>
+          <li>Другие расчёты по запросу</li>
+        </ul>
+      </div>
+      <div className="ml-5 mt-5">
+        <h3 className="checkmarkedHeader">Составление бизнес-планов</h3>
+        <ul className="contentUL">
+          <li>Основание предприятия</li>
+          <li>Новый проект</li>
+          <li>Бизнес-эмиграция</li>
+          <li>Получение кредита в банке</li>
+          <li>Крупные приобретения</li>
+          <li>
+            Получение разрешения на работу в Германии (бизнес-план для ведомства по делам
+            иностранцев)
+          </li>
+        </ul>
+      </div>
+      <div className="ml-5 mt-5">
+        <h3 className="checkmarkedHeader">Основание собственного дела</h3>
+        <ul className="contentUL">
+          <li>Консультации для начинающих предпринимателей</li>
+          <li>Выбор формы предприятия и формы собственности</li>
+          <li>Планово-финансовая калькуляция</li>
+          <li>Составление бизнес-плана</li>
+        </ul>
+      </div>
+      <div className="ml-5 mt-5">
+        <h3 className="checkmarkedHeader">Презентации</h3>
+        <ul className="contentUL">
+          <li>Для клиентов</li>
+          <li>Продажа и сбыт</li>
+          <li>Для инвесторов</li>
+        </ul>
+      </div>
+      <div className="ml-5 mt-5">
+        <h3 className="checkmarkedHeader">Расчёты в Excel</h3>
+        <ul className="contentUL">
+          <li>Организация бизнеса и оперативной работы</li>
+          <li>Контроль за денежными потоками</li>
+          <li>Обучение работе в Excel</li>
+        </ul>
+      </div>
+      <div className="ml-5 mt-5">
+        <h3 className="checkmarkedHeader">Переводы текстов любой тематики</h3>
+        <ul className="contentUL">
+          <li>Немецкий</li>
+          <li>Английский</li>
+          <li>Русский</li>
+          <li>Испанский</li>
+          <li>Другие языки</li>
+        </ul>
+      </div>
+      <div className="ml-5 mt-5">
+        <h3 className="checkmarkedHeader">Ведение частной переписки и деловой корреспонденции</h3>
+        <ul className="contentUL">
+          <li>Заполнение формуляров</li>
+          <li>Письменная корреспонденция</li>
+          <li>
+            Деловая корреспонденция:
+            <ul className="contentUL">
+              <li>Запросы и заявки</li>
+              <li>Жалобы</li>
+              <li>Претензии</li>
+              <li>Заказы</li>
+              <li>Ведение переговоров</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div className="ml-5 mt-5">
+        <h3 className="checkmarkedHeader">Исследование рынка</h3>
+        <ul className="contentUL">
+          <li>Изучение и анализ продукта</li>
+          <li>Анализ деятельности отраслей</li>
+          <li>Анализ конъюнктуры рынка</li>
+          <li>Маркетинговое исследование</li>
+          <li>Анализ конкурентоспособности и изучение конкурентов</li>
+          <li>Исследование целевой группы</li>
+          <li>Анализ местоположения</li>
+        </ul>
+      </div>
+    </section>
