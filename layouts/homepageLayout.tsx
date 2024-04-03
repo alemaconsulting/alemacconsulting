@@ -1,44 +1,49 @@
 const HomepageLayout = () => {
   return (
     <section className="contentSectionWrapper">
-      <h1 className="text-center text-lg lg:font-extrabold">Präsentationen</h1>
+      <h1 className="text-center text-lg lg:font-extrabold">
+        Führung von Geschäfts- und Privatkorrespondenz aller Art inkl. Übersetzungen
+      </h1>
       <div className="ml-5 mt-5 sm:mt-10">
-        <h3 className="ml-5 mt-5 text-base font-extrabold">
-          Eine gut durchdachte und originelle Präsentation kann entscheidend für den Erfolg sein.
-        </h3>
-        <h3 className="ml-5 mt-5 text-base font-extrabold">
-          Wir erstellen für Sie Präsentationen, die kreativ, informativ und alles andere als 0815
-          sind.
-        </h3>
-        <h3 className="ml-5 mt-5 text-base font-extrabold">
-          Wir gestalten die Präsentationen entsprechend Ihrer Zielgruppe, Ihrem Fachgebiet und
-          Geschäftsbereich:
-        </h3>
-        <ul className="contentUL ml-16">
-          <li className="mt-5">
-            <h3>für Kunden:</h3>
-            <p className="ml-5 mt-5">
-              Stellen Sie Ihren Kunden Ihr neuestes Produkt oder Projekt vor oder akquirieren Sie
-              neue Kundenstämme und Geschäftspartner. Mit unserer Hilfe werden beeindruckende
-              Präsentationen zum Kinderspiel.
-            </p>
-          </li>
-          <li className="mt-5">
-            <h3>Verkauf und Vertrieb:</h3>
-            <p className="ml-5 mt-5">
-              Eine professionelle und gut vorbereitete Präsentation punktet auch immer im Verkauf
-              und Vertrieb – die Verpackung entscheidet. Wir helfen Ihnen bei der Erstellung einer
-              solchen Präsentation – in einer Sprache, die Sie selbst wählen.
-            </p>
-          </li>
-          <li className="mt-5">
-            <h3>für Investoren:</h3>
-            <p className="ml-5 mt-5">
-              Auch Investoren sind stets an Ihrem Fortschritt und Ihren neuesten Ideen interessiert.
-              Unsere Präsentations-Spezialisten helfen Ihnen dabei Investoren auf dem Laufenden zu
-              halten und von neuen Ideen zu überzeugen.
-            </p>
-          </li>
+        <p className="ml-5 mt-5 text-base">
+          Sie haben vor lauter Arbeit keine Zeit mehr für bürokratische Notwendigkeiten? Sie sind
+          sich unsicher, wie Sie Anfragen stellen, Reklamationen formulieren oder wie Sie Anträge
+          ausfüllen? Sie sind der deutschen Sprache nicht mächtig genug für Verhandlungen mit
+          Behörden? Wir übernehmen jegliche private und geschäftliche Korrespondenz:
+        </p>
+        <h3 className="mt-5 text-xl font-extrabold">Ausfüllen von Formularen</h3>
+        <p className="ml-5 mt-5 text-base">
+          Wir helfen Ihnen beim korrekten Ausfüllen von Formularen und Anträgen jeglicher Art,
+          sodass sich der bürokratische Aufwand für Sie auf ein Minimum beschränkt.
+        </p>
+        <h3 className="mt-5 text-xl font-extrabold">Schriftverkehr</h3>
+        <p className="ml-5 mt-5 text-base">
+          Wir führen für Sie den kompletten Schriftverkehr mit Unternehmen, Ämtern, Behörden,
+          Krankenkassen, Anwälten, usw.
+        </p>
+        <h3 className="mt-5 text-xl font-extrabold">Geschäftliche Korrespondenz</h3>
+        <ul className="contentUL">
+          <li>Anfragen</li>
+          <li>Beschwerden</li>
+          <li>Reklamationen</li>
+          <li>Bestellungen</li>
+          <li>Verhandlungen</li>
+        </ul>
+        <p className="ml-5 mt-5 text-base">
+          Sie wollen Ihr Unternehmen international führen? Auch ausländische Kunden ansprechen? Ein
+          Teil der Globalisierung werden? Wir führen alle Arten von Übersetzungen für Sie durch – ob
+          Webseiten, Fachtexte oder Simultanübersetzungen.
+        </p>
+        <p className="ml-5 mt-5 text-base">
+          Außerdem verfassen wir Privat- und Geschäftskorrespondenz, Bedienungsanleitungen, Verträge
+          und führen Verhandlungen aller Art. Folgende Sprachen sind möglich:
+        </p>
+        <ul className="contentUL">
+          <li>Deutsch</li>
+          <li>Englisch</li>
+          <li>Russisch</li>
+          <li>Spanisch</li>
+          <li>Andere Sprachen auf Nachfrage</li>
         </ul>
       </div>
     </section>

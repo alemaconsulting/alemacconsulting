@@ -22,8 +22,8 @@ const Navigation = ({ linksData }: PropsType) => {
   });
 
   return (
-    <nav className="hidden h-max w-[300px] rounded-3xl border-2 border-borderGrey bg-gradBacking bg-horizontalBgGrad px-8 py-10 lg:block">
-      <ul className="border-b-2 border-borderGrey font-extrabold">
+    <nav className="hidden h-max rounded-3xl border-2 border-borderGrey bg-gradBacking bg-horizontalBgGrad px-8 py-10 lg:block lg:w-[350px]">
+      <ul className="w-full border-b-2 border-borderGrey font-extrabold">
         <li className="h-11 w-full border-t-2 border-borderGrey text-center">
           <Link href="/" className={`routeLink ${isActiveLink('/') ? 'text-brightBlue' : ''}`}>
             Alema consulting
