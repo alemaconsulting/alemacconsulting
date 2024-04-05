@@ -1,26 +1,17 @@
-import HomepageLayout from '@/layouts/homepageLayout';
 import MainLayout from '@/layouts/mainLayout';
 import { getAllPostsData } from '@/shared/helpers/getAllPostsData';
 import { resultObj } from '@/shared/types';
 
-export async function getStaticProps() {
+export async function getAllPosts() {
   const allPostsData: resultObj[] = await getAllPostsData();
-  return {
-    props: {
-      allPostsData,
-    },
-  };
-}
-
-type PropsType = {
-  allPostsData: resultObj[];
-};
-
-const Index = ({ allPostsData }: PropsType) => {
-  const linksData = allPostsData.map((post) => ({
+  return allPostsData.map((post) => ({
     slug: post.slug,
     title: post.title,
   }));
+}
+
+const Index = async () => {
+  const linksData = await getAllPosts();
   return (
     <MainLayout linksData={linksData}>
       <section className="contentSectionWrapper flex items-center text-center text-2xl">
