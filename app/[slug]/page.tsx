@@ -1,3 +1,5 @@
+import { Metadata } from 'next';
+
 import MainLayout from '@/layouts/mainLayout';
 import { getAllPostsData } from '@/shared/helpers/getAllPostsData';
 import { getAllPostSlugs } from '@/shared/helpers/getAllPostsSlugs';
@@ -5,6 +7,10 @@ import MdToHtml from '@/shared/helpers/mdToHtml';
 import { resultObj } from '@/shared/types';
 
 type LinksData = { slug: string; title: string }[];
+type Props = {
+  params: { slug: string };
+  searchParams: { [key: string]: string | string[] | undefined };
+};
 
 export async function generateStaticParams() {
   const allPosts = await getAllPostSlugs();
@@ -12,6 +18,21 @@ export async function generateStaticParams() {
 }
 
 export const dynamicParams = false;
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const allPostsData = await getAllPostsData();
+  const post = allPostsData.find((post) => post.slug === params.slug);
+
+  if (post) {
+    return {
+      title: post.title,
+    };
+  } else {
+    return {
+      title: 'Alema consulting',
+    };
+  }
+}
 
 async function getPostsData(slug: string) {
   try {
@@ -26,7 +47,6 @@ async function getPostsData(slug: string) {
       return { content, postMetadata, linksData };
     } else {
       throw new Error('No post!');
-      // return { content: undefined, postMetadata: undefined, linksData };
     }
   } catch (error) {
     return { notFound: true };
