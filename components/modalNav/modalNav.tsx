@@ -1,6 +1,7 @@
 'use client';
 
 import { useSearchParams, useRouter } from 'next/navigation';
+import { Suspense } from 'react';
 
 import ModalOverlay from './modalOverlay';
 import NavBlock from './navBlock';
@@ -14,9 +15,11 @@ const ModalNav = ({ linksData }: PropsType) => {
   const router = useRouter();
   const closeModal = () => router.back();
   return isModalShown ? (
-    <ModalOverlay closeModal={closeModal}>
-      <NavBlock closeModal={closeModal} linksData={linksData} />
-    </ModalOverlay>
+    <Suspense>
+      <ModalOverlay closeModal={closeModal}>
+        <NavBlock closeModal={closeModal} linksData={linksData} />
+      </ModalOverlay>
+    </Suspense>
   ) : null;
 };
 
