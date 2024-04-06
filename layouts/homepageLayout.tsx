@@ -2,9 +2,9 @@ const HomepageLayout = () => {
   return (
     <section className="contentSectionWrapper">
       <h1 className="text-center text-lg lg:font-extrabold">Beratungsangebot: Überblick</h1>
-      <p className="mt-5 text-center text-lg lg:font-extrabold">
+      <h2 className="mt-5 text-center text-lg lg:font-extrabold">
         Seit 2012 bieten wir Unternehmensberatung in verschiedenen Bereichen an:
-      </p>
+      </h2>
       <div className="ml-5 mt-5 sm:mt-10">
         <h3 className="checkmarkedHeader">Produkt- und Lieferantensuche</h3>
         <ul className="contentUL">

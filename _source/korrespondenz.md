@@ -5,27 +5,40 @@ date: '2024-04-03'
 author: "tedzury"
 ---
 
-<section className="contentSectionWrapper">
-      <h1 className="text-center text-lg lg:font-extrabold">Marktforschung</h1>
-      <div className="ml-5 mt-5 sm:mt-10">
-        <p className="ml-5 mt-5 text-base">
-          Sie wollen ein neues Produkt auf den Markt bringen? Eine neue Zielgruppe ansprechen? Sie
-          wissen nicht, wie Sie das Marketing für Ihr neues Unternehmen angehen sollen? Wir
-          erforschen den Markt für Sie und analysieren Ihr Unternehmen aus Kundenperspektive –
-          effizient und zielgerichtet.
-        </p>
-        <h3 className="checkmarkedHeader mt-5">
-          Bleiben Sie durch unsere individuelle Betreuung mit Ihren Kunden in Kontakt und lernen
-          Sie, ihre Bedürfnisse zu verstehen. Zu unseren Leistungen gehören:
-        </h3>
-        <ul className="contentUL">
-          <li>Produktforschung und Produktanalyse</li>
-          <li>Branchenanalyse</li>
-          <li>Marktanalyse</li>
-          <li>Marketingforschung</li>
-          <li>Wettbewerbs-/Konkurrenzanalyse</li>
-          <li>Zielgruppenanalyse</li>
-          <li>Standortanalyse</li>
-        </ul>
-      </div>
-    </section>
+# Führung von Geschäfts- und Privatkorrespondenz aller Art inkl. Übersetzungen
+
+Sie haben vor lauter Arbeit keine Zeit mehr für bürokratische Notwendigkeiten? Sie sind sich unsicher, wie Sie Anfragen stellen, Reklamationen formulieren oder wie Sie Anträge ausfüllen? Sie sind der deutschen Sprache nicht mächtig genug für Verhandlungen mit Behörden? Wir übernehmen jegliche private und geschäftliche Korrespondenz:
+
+
+#### Ausfüllen von Formularen
+
+
+Wir helfen Ihnen beim korrekten Ausfüllen von Formularen und Anträgen jeglicher Art, sodass sich der bürokratische Aufwand für Sie auf ein Minimum beschränkt.
+
+
+#### Schriftverkehr
+
+
+Wir führen für Sie den kompletten Schriftverkehr mit Unternehmen, Ämtern, Behörden, Krankenkassen, Anwälten, usw.
+
+
+#### Geschäftliche Korrespondenz
+
+- Anfragen
+- Beschwerden
+- Reklamationen
+- Bestellungen
+- Verhandlungen
+
+
+Sie wollen Ihr Unternehmen international führen? Auch ausländische Kunden ansprechen? Ein Teil der Globalisierung werden? Wir führen alle Arten von Übersetzungen für Sie durch – ob Webseiten, Fachtexte oder Simultanübersetzungen.
+
+
+Außerdem verfassen wir Privat- und Geschäftskorrespondenz, Bedienungsanleitungen, Verträge und führen Verhandlungen aller Art. Folgende Sprachen sind möglich:
+
+
+- Deutsch
+- Englisch
+- Russisch
+- Spanisch
+- Andere Sprachen auf Nachfrage
