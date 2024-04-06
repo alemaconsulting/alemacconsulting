@@ -5,10 +5,12 @@ import { resultObj } from '@/shared/types';
 
 export async function getAllPosts() {
   const allPostsData: resultObj[] = await getAllPostsData();
-  return allPostsData.map((post) => ({
-    slug: post.slug,
-    title: post.title,
-  }));
+  return allPostsData
+    .sort((a, b) => a.weight - b.weight)
+    .map((post) => ({
+      slug: post.slug,
+      title: post.title,
+    }));
 }
 const Index = async () => {
   const linksData = await getAllPosts();

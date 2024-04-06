@@ -2,6 +2,7 @@
 slug: praesentationen
 title: "Praesentationen"
 date: '2024-04-03'
+weight: 0.04
 author: "tedzury"
 ---
 # Präsentationen

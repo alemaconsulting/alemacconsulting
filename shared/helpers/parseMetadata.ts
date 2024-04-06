@@ -16,6 +16,7 @@ function parseMetadata(
 				: new Date().toISOString(),
 		author: matterResult.data.author || 'admin',
 		slug: matterResult.data.slug || path.basename(filepath).replace('.md', ''),
+		weight: matterResult.data.weight || 1,
 	};
 }
 

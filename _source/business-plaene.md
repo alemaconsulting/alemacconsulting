@@ -2,6 +2,7 @@
 slug: business-plaene
 title: "Business-Plaene"
 date: '2024-04-03'
+weight: 0.03
 author: "tedzury"
 ---
 # Business-Pläne

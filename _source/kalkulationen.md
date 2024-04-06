@@ -2,6 +2,7 @@
 slug: kalkulationen
 title: "Kalkulationen"
 date: '2024-04-03'
+weight: 0.02
 author: "tedzury"
 ---
 

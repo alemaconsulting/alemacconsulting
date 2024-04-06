@@ -2,6 +2,7 @@
 slug: korrespondenz
 title: "Korrespondenz"
 date: '2024-04-03'
+weight: 0.08
 author: "tedzury"
 ---
 

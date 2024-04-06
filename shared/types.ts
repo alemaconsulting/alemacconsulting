@@ -4,6 +4,7 @@ export type resultObj = {
 	author: string;
 	slug: string;
 	content: string;
+	weight: number;
 };
 
 export type postData = {

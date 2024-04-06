@@ -37,10 +37,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 async function getPostsData(slug: string) {
   try {
     const allPostsData: resultObj[] = await getAllPostsData();
-    const linksData = allPostsData.map((post) => ({
-      slug: post.slug,
-      title: post.title,
-    }));
+    const linksData = allPostsData
+      .sort((a, b) => a.weight - b.weight)
+      .map((post) => ({
+        slug: post.slug,
+        title: post.title,
+      }));
     const post = allPostsData.find((post) => post.slug === slug);
     if (post) {
       const { content, ...postMetadata } = post;

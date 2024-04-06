@@ -2,6 +2,7 @@
 slug: excel-kalkulation
 title: "Excel-kalkulation"
 date: '2024-04-03'
+weight: 0.05
 author: "tedzury"
 ---
 
