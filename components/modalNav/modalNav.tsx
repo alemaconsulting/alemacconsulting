@@ -15,11 +15,9 @@ const ModalNav = ({ linksData }: PropsType) => {
   const router = useRouter();
   const closeModal = () => router.back();
   return isModalShown ? (
-    <Suspense>
-      <ModalOverlay closeModal={closeModal}>
-        <NavBlock closeModal={closeModal} linksData={linksData} />
-      </ModalOverlay>
-    </Suspense>
+    <ModalOverlay closeModal={closeModal}>
+      <NavBlock closeModal={closeModal} linksData={linksData} />
+    </ModalOverlay>
   ) : null;
 };
 
