@@ -3,7 +3,7 @@ import MainLayout from '@/layouts/mainLayout';
 import { getAllPostsData } from '@/shared/helpers/getAllPostsData';
 import { resultObj } from '@/shared/types';
 
-export async function getAllPosts() {
+async function getAllPosts() {
   const allPostsData: resultObj[] = await getAllPostsData();
   return allPostsData
     .sort((a, b) => a.weight - b.weight)
