@@ -4,6 +4,7 @@ title: "Produktmanagement"
 date: '2024-04-03'
 weight: 0.01
 author: "tedzury"
+description: 'Produktmanagement'
 ---
 
 # Produkt und Lieferantensuche

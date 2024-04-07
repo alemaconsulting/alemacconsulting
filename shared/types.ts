@@ -5,6 +5,7 @@ export type resultObj = {
 	slug: string;
 	content: string;
 	weight: number;
+	description: string;
 };
 
 export type postData = {

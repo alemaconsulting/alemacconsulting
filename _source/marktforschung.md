@@ -4,6 +4,7 @@ title: "Marktforschung"
 date: '2024-04-03'
 weight: 0.07
 author: "tedzury"
+description: "Marktforschung"
 ---
 
 # Marktforschung

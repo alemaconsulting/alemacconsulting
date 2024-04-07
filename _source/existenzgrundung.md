@@ -4,6 +4,7 @@ title: "Existenzgründung"
 date: '2024-04-03'
 weight: 0.06
 author: "tedzury"
+description: "Existenzgründung"
 ---
 
 # Existenzgründung

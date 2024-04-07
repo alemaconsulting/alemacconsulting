@@ -11,9 +11,6 @@ body {
 }
 
 @layer components {
-  .checkmarkedHeader {
-    @apply relative before:border-checkGreen before:absolute before:left-[-20px] before:top-[6px] before:h-[10px] before:w-[17px] before:rotate-[-50deg] before:rounded-sm before:border-b-[4px] before:border-l-[4px] before:content-[''] sm:before:w-[25px] sm:before:h-[15px] sm:before:border-b-[5px] sm:before:border-l-[5px] sm:before:top-[2px] sm:before:left-[-35px] text-lg font-extrabold sm:ml-3 sm:text-2xl my-5
-  }
   .contentUL {
     @apply ml-6 mt-3 list-disc text-base sm:ml-9 sm:text-lg sm:font-extrabold
   }
@@ -22,5 +19,20 @@ body {
   }
   .contentSectionWrapper {
     @apply w-full py-5 font-bold sm:rounded-lg sm:border-2 sm:border-borderGrey sm:bg-gradBacking sm:bg-horizontalBgGrad sm:px-10 sm:py-4 xl:px-16 xl:py-8
+  }
+  .h1Styles {
+    @apply text-center text-2xl lg:font-extrabold m-5
+  }
+  .h2Styles {
+    @apply m-5 text-center text-lg lg:font-extrabold
+  }
+  .h3Styles {
+    @apply relative before:border-checkGreen before:absolute before:left-[-20px] before:top-[6px] before:h-[10px] before:w-[17px] before:rotate-[-50deg] before:rounded-sm before:border-b-[4px] before:border-l-[4px] before:content-[''] sm:before:w-[25px] sm:before:h-[15px] sm:before:border-b-[5px] sm:before:border-l-[5px] sm:before:top-[2px] sm:before:left-[-35px] text-lg font-extrabold sm:ml-3 sm:text-2xl m-5
+  }
+  .h4Styles {
+    @apply m-5 text-xl font-extrabold
+  }
+  .pStyles {
+    @apply m-5 text-lg lg:font-extrabold
   }
 }

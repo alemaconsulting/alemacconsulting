@@ -17,6 +17,8 @@ function parseMetadata(
 		author: matterResult.data.author || 'admin',
 		slug: matterResult.data.slug || path.basename(filepath).replace('.md', ''),
 		weight: matterResult.data.weight || 1,
+		description:
+			matterResult.data.description || 'Alema Consulting Unternehmensberatung in Berlin.',
 	};
 }
 
