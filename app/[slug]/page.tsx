@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 
 import MainLayout from '@/layouts/mainLayout';
+import { defaultMetaObj, SITE_URL } from '@/shared/constants';
 import { getAllPostsData } from '@/shared/helpers/getAllPostsData';
 import { getAllPostSlugs } from '@/shared/helpers/getAllPostsSlugs';
 import MdToHtml from '@/shared/helpers/mdToHtml';
@@ -27,12 +28,24 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     return {
       title: post.title,
       description: post.description,
+      openGraph: {
+        title: post.title,
+        description: post.description,
+        url: SITE_URL,
+        siteName: 'Alema consulting',
+        images: [
+          {
+            url: `${SITE_URL}og.jpg`,
+            width: 677,
+            height: 508,
+          },
+        ],
+        locale: 'de',
+        type: 'website',
+      },
     };
   } else {
-    return {
-      title: 'Alema consulting',
-      description: 'Alema Consulting Unternehmensberatung in Berlin.',
-    };
+    return defaultMetaObj;
   }
 }
 

@@ -1,10 +1,11 @@
 import type { Metadata } from 'next';
 
+import { defaultMetaObj } from '@/shared/constants';
+
 import '../styles/globals.css';
 
 export const metadata: Metadata = {
-  title: 'Alema consulting',
-  description: 'Alema Consulting Unternehmensberatung in Berlin.',
+  ...defaultMetaObj,
   icons: {
     icon: '/assets/icons/favicon.ico',
   },
