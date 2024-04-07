@@ -6,7 +6,7 @@ const HomepageLayout = () => {
         Seit 2012 bieten wir Unternehmensberatung in verschiedenen Bereichen an:
       </h2>
       <section className="ml-5 mt-5 sm:mt-10">
-        <h3 className="checkmarkedHeader">Produkt- und Lieferantensuche</h3>
+        <h3 className="h3Styles">Produkt- und Lieferantensuche</h3>
         <ul className="contentUL">
           <li>Produktsuche</li>
           <li>Weltweite Lieferantensuche</li>
@@ -15,7 +15,7 @@ const HomepageLayout = () => {
         </ul>
       </section>
       <section className="ml-5 mt-5">
-        <h3 className="checkmarkedHeader">Kalkulationen aller Ar</h3>
+        <h3 className="h3Styles">Kalkulationen aller Ar</h3>
         <ul className="contentUL">
           <li>Finanzkalkulationen</li>
           <li>Kreditrechner</li>
@@ -31,7 +31,7 @@ const HomepageLayout = () => {
         </ul>
       </section>
       <section className="ml-5 mt-5">
-        <h3 className="checkmarkedHeader">Business-Pläne</h3>
+        <h3 className="h3Styles">Business-Pläne</h3>
         <ul className="contentUL">
           <li>Geschäftsgründung</li>
           <li>Neue Projekte</li>
@@ -40,7 +40,7 @@ const HomepageLayout = () => {
         </ul>
       </section>
       <section className="ml-5 mt-5">
-        <h3 className="checkmarkedHeader">Existenzgründung</h3>
+        <h3 className="h3Styles">Existenzgründung</h3>
         <ul className="contentUL">
           <li>Beratung für Existenzgründer</li>
           <li>Unternehmensform</li>
@@ -49,7 +49,7 @@ const HomepageLayout = () => {
         </ul>
       </section>
       <section className="ml-5 mt-5">
-        <h3 className="checkmarkedHeader">Präsentationen</h3>
+        <h3 className="h3Styles">Präsentationen</h3>
         <ul className="contentUL">
           <li>für Kunden</li>
           <li>für Verkauf und Vertrieb</li>
@@ -57,7 +57,7 @@ const HomepageLayout = () => {
         </ul>
       </section>
       <section className="ml-5 mt-5">
-        <h3 className="checkmarkedHeader">Excel-Tabellenkalkulation</h3>
+        <h3 className="h3Styles">Excel-Tabellenkalkulation</h3>
         <ul className="contentUL">
           <li>Organisation der Geschäftsprozesse</li>
           <li>Überblick über Ihre Geldbewegungen</li>
@@ -65,7 +65,7 @@ const HomepageLayout = () => {
         </ul>
       </section>
       <section className="ml-5 mt-5">
-        <h3 className="checkmarkedHeader">Übersetzungen aller Art</h3>
+        <h3 className="h3Styles">Übersetzungen aller Art</h3>
         <ul className="contentUL">
           <li>Deutsch</li>
           <li>Englisch</li>
@@ -75,9 +75,7 @@ const HomepageLayout = () => {
         </ul>
       </section>
       <section className="ml-5 mt-5">
-        <h3 className="checkmarkedHeader">
-          Führung von Geschäfts- und Privatkorrespondenz aller Art
-        </h3>
+        <h3 className="h3Styles">Führung von Geschäfts- und Privatkorrespondenz aller Art</h3>
         <ul className="contentUL">
           <li>Ausfüllen von Formularen</li>
           <li>Schriftverkehr</li>
@@ -85,7 +83,7 @@ const HomepageLayout = () => {
         </ul>
       </section>
       <section className="ml-5 mt-5">
-        <h3 className="checkmarkedHeader">Marktforschung</h3>
+        <h3 className="h3Styles">Marktforschung</h3>
         <ul className="contentUL">
           <li>Produktforschung und Produktanalyse</li>
           <li>Branchenanalyse</li>
