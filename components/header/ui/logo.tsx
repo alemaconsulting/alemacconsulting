@@ -1,6 +1,6 @@
 const Logo = () => {
   return (
-    <div className="flex select-none items-center md:w-[33%] md:flex-col">
+    <section className="flex select-none items-center md:w-[33%] md:flex-col">
       <img
         alt="Alema consunlting logo: triangle composed from differently shaped blue parts."
         src="../assets/Logo_triangle.svg"
@@ -17,7 +17,7 @@ const Logo = () => {
           Unternehmensberatung
         </p>
       </div>
-    </div>
+    </section>
   );
 };
 

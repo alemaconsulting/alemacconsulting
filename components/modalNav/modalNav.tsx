@@ -1,7 +1,6 @@
 'use client';
 
 import { useSearchParams, useRouter } from 'next/navigation';
-import { Suspense } from 'react';
 
 import ModalOverlay from './modalOverlay';
 import NavBlock from './navBlock';

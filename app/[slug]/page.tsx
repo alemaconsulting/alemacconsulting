@@ -75,9 +75,9 @@ const ContentPage = async ({ params }: { params: { slug: string } }) => {
   const pageContent = content && postMetadata ? content : '<div>No such page...</div>';
   return (
     <MainLayout linksData={linksData as LinksData}>
-      <section className="contentSectionWrapper">
+      <article className="contentSectionWrapper">
         <MdToHtml mdSource={pageContent} />
-      </section>
+      </article>
     </MainLayout>
   );
 };
