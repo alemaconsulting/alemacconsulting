@@ -4,6 +4,7 @@ title: "Kalkulationen"
 date: '2024-04-03'
 weight: 0.02
 author: "tedzury"
+description: "Kalkulationen"
 ---
 
 # Kalkulationen aller Art

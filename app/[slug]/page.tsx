@@ -26,10 +26,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (post) {
     return {
       title: post.title,
+      description: post.description,
     };
   } else {
     return {
       title: 'Alema consulting',
+      description: 'Alema Consulting Unternehmensberatung in Berlin.',
     };
   }
 }
