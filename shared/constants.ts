@@ -12,6 +12,7 @@ const defaultMetaObj = {
 	icons: {
 		icon: '/assets/icons/favicon.ico',
 	},
+	metadataBase: new URL(SITE_URL),
 	openGraph: {
 		title: 'Alema consulting',
 		description: 'Alema Consulting Unternehmensberatung in Berlin.',
@@ -19,7 +20,7 @@ const defaultMetaObj = {
 		siteName: 'Alema consulting',
 		images: [
 			{
-				url: `${SITE_URL}og.jpg`,
+				url: `$opengraph-image.jpg`,
 				width: 677,
 				height: 508,
 			},
