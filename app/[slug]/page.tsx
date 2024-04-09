@@ -28,21 +28,21 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     return {
       title: post.title,
       description: post.description,
-      openGraph: {
-        title: post.title,
-        description: post.description,
-        url: SITE_URL,
-        siteName: 'Alema consulting',
-        images: [
-          {
-            url: `${SITE_URL}og.jpg`,
-            width: 677,
-            height: 508,
-          },
-        ],
-        locale: 'de',
-        type: 'website',
-      },
+      // openGraph: {
+      //   title: post.title,
+      //   description: post.description,
+      //   url: SITE_URL,
+      //   siteName: 'Alema consulting',
+      //   images: [
+      //     {
+      //       url: `opengraph-image.jpg`,
+      //       width: 677,
+      //       height: 508,
+      //     },
+      //   ],
+      //   locale: 'de',
+      //   type: 'website',
+      // },
     };
   } else {
     return defaultMetaObj;

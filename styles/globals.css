@@ -21,7 +21,7 @@ body {
     @apply w-full py-5 font-bold sm:rounded-lg sm:border-2 sm:border-borderGrey sm:bg-gradBacking sm:bg-horizontalBgGrad sm:px-10 sm:py-4 xl:px-16 xl:py-8
   }
   .h1Styles {
-    @apply text-center text-2xl lg:font-extrabold m-5
+    @apply m-5 text-center text-2xl lg:font-extrabold
   }
   .h2Styles {
     @apply m-5 text-center text-lg lg:font-extrabold

@@ -272,4 +272,3 @@ Orte. Dies stellt ein berechtigtes Interesse im Sinne von Art. 6 Abs. 1 lit. f D
 
 Mehr Informationen zum Umgang mit Nutzerdaten finden Sie in der Datenschutzerklärung von
 Google: https://www.google.de/intl/de/policies/privacy/.
-
