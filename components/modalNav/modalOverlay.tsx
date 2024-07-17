@@ -1,3 +1,4 @@
+import { JSX } from 'react';
 type PropsType = {
   closeModal: () => void;
   children?: JSX.Element;

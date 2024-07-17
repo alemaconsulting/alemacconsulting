@@ -3,8 +3,8 @@ const CONTENT_FOLDER = '_source';
 const SITE_URL = 'https://alemacconsulting.vercel.app/';
 const CONTACT_PHONE_ONE = '03085629694';
 const CONTACT_PHONE_TWO = '01703707021';
-const ADDRESS_PART_ONE = 'Siemensstr. 13';
-const ADDRESS_PART_TWO = '12247 Berlin';
+// const ADDRESS_PART_ONE = '';
+// const ADDRESS_PART_TWO = '';
 
 const defaultMetaObj = {
 	title: 'Alema consulting',
@@ -35,7 +35,7 @@ export {
 	SITE_URL,
 	CONTACT_PHONE_ONE,
 	CONTACT_PHONE_TWO,
-	ADDRESS_PART_ONE,
-	ADDRESS_PART_TWO,
+	// ADDRESS_PART_ONE,
+	// ADDRESS_PART_TWO,
 	defaultMetaObj,
 };
