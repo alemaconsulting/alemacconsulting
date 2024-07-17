@@ -5,6 +5,15 @@ const HomepageLayout = () => {
       <h2 className="mt-5 text-center text-lg lg:font-extrabold">
         Seit 2012 bieten wir Unternehmensberatung in verschiedenen Bereichen an:
       </h2>
+      <section className="ml-5 mt-5">
+        <h3 className="h3Styles">Existenzgründung</h3>
+        <ul className="contentUL">
+          <li>Beratung für Existenzgründer</li>
+          <li>Unternehmensform</li>
+          <li>Kalkulationen</li>
+          <li>Erstellung von Business-Plänen</li>
+        </ul>
+      </section>
       <section className="ml-5 mt-5 sm:mt-10">
         <h3 className="h3Styles">Produkt- und Lieferantensuche</h3>
         <ul className="contentUL">
@@ -37,15 +46,6 @@ const HomepageLayout = () => {
           <li>Neue Projekte</li>
           <li>Krediterhaltung bei Banken</li>
           <li>Große Einkäufe</li>
-        </ul>
-      </section>
-      <section className="ml-5 mt-5">
-        <h3 className="h3Styles">Existenzgründung</h3>
-        <ul className="contentUL">
-          <li>Beratung für Existenzgründer</li>
-          <li>Unternehmensform</li>
-          <li>Kalkulationen</li>
-          <li>Erstellung von Business-Plänen</li>
         </ul>
       </section>
       <section className="ml-5 mt-5">
