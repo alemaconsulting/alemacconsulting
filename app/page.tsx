@@ -8,6 +8,7 @@ async function getAllPosts() {
   return allPostsData
     .sort((a, b) => a.weight - b.weight)
     .map((post) => ({
+      key: post.slug,
       slug: post.slug,
       title: post.title,
     }));

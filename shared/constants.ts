@@ -1,10 +1,8 @@
 const CONTENT_FOLDER = '_source';
 
-const SITE_URL = 'https://alemacconsulting.vercel.app/';
+const SITE_URL = 'https://alema-consulting.de/';
 const CONTACT_PHONE_ONE = '03085629694';
 const CONTACT_PHONE_TWO = '01703707021';
-// const ADDRESS_PART_ONE = '';
-// const ADDRESS_PART_TWO = '';
 
 const defaultMetaObj = {
 	title: 'Alema Consulting',
@@ -20,7 +18,7 @@ const defaultMetaObj = {
 		siteName: 'Alema consulting',
 		images: [
 			{
-				url: `$opengraph-image.jpg`,
+				url: `assets/opengraph-image.jpg`,
 				width: 677,
 				height: 508,
 			},
@@ -30,12 +28,4 @@ const defaultMetaObj = {
 	},
 };
 
-export {
-	CONTENT_FOLDER,
-	SITE_URL,
-	CONTACT_PHONE_ONE,
-	CONTACT_PHONE_TWO,
-	// ADDRESS_PART_ONE,
-	// ADDRESS_PART_TWO,
-	defaultMetaObj,
-};
+export { CONTENT_FOLDER, SITE_URL, CONTACT_PHONE_ONE, CONTACT_PHONE_TWO, defaultMetaObj };
