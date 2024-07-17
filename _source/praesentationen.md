@@ -1,10 +1,10 @@
 ---
 slug: praesentationen
-title: "Praesentationen"
+title: "Präsentationen"
 date: '2024-04-03'
-weight: 0.04
+weight: 40
 author: "tedzury"
-description: "Praesentationen"
+description: "Präsentationen"
 ---
 # Präsentationen
 

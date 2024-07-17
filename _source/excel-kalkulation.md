@@ -1,10 +1,10 @@
 ---
 slug: excel-kalkulation
-title: "Excel-kalkulation"
+title: "Excel-Kalkulation"
 date: '2024-04-03'
-weight: 0.05
+weight: 50
 author: "tedzury"
-description: "Excel-kalkulation"
+description: "Excel-Kalkulation"
 ---
 
 # Excel-Tabellenkalkulation

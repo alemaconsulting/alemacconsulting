@@ -28,7 +28,7 @@ const Navigation = ({ linksData }: PropsType) => {
       <ul className="w-full border-b-2 border-borderGrey font-extrabold">
         <li className="h-11 w-full border-t-2 border-borderGrey text-center">
           <Link href="/" className={`routeLink ${isActiveLink('/') ? 'text-brightBlue' : ''}`}>
-            Alema consulting
+            Alema Consulting
           </Link>
         </li>
         {mappedLinks}

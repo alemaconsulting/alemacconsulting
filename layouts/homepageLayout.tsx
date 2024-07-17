@@ -65,16 +65,6 @@ const HomepageLayout = () => {
         </ul>
       </section>
       <section className="ml-5 mt-5">
-        <h3 className="h3Styles">Übersetzungen aller Art</h3>
-        <ul className="contentUL">
-          <li>Deutsch</li>
-          <li>Englisch</li>
-          <li>Russisch</li>
-          <li>Spanisch</li>
-          <li>Andere Sprachen auf Nachfrage</li>
-        </ul>
-      </section>
-      <section className="ml-5 mt-5">
         <h3 className="h3Styles">Führung von Geschäfts- und Privatkorrespondenz aller Art</h3>
         <ul className="contentUL">
           <li>Ausfüllen von Formularen</li>

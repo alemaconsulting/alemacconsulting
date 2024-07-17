@@ -32,7 +32,7 @@ const NavBlock = ({ closeModal, linksData }: PropsType) => {
             href="/"
             className={`routeLink font-bold ${isActiveLink('/') ? 'text-brightBlue' : ''}`}
           >
-            Alema consulting
+            Alema Consulting
           </Link>
         </li>
         {mappedLinks}
