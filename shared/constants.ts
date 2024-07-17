@@ -7,14 +7,14 @@ const CONTACT_PHONE_TWO = '01703707021';
 // const ADDRESS_PART_TWO = '';
 
 const defaultMetaObj = {
-	title: 'Alema consulting',
+	title: 'Alema Consulting',
 	description: 'Alema Consulting Unternehmensberatung in Berlin.',
 	icons: {
 		icon: '/assets/icons/favicon.ico',
 	},
 	metadataBase: new URL(SITE_URL),
 	openGraph: {
-		title: 'Alema consulting',
+		title: 'Alema Consulting',
 		description: 'Alema Consulting Unternehmensberatung in Berlin.',
 		url: SITE_URL,
 		siteName: 'Alema consulting',

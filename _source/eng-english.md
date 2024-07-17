@@ -1,10 +1,10 @@
 ---
 slug: eng-english
-title: "Eng-english"
+title: "Eng - English"
 date: '2024-04-03'
-weight: 0.09
-author: "tedzury"
-description: "Eng-english"
+weight: 90
+author: "andron13"
+description: "Eng - English"
 ---
 
 # Alema Consulting
@@ -59,14 +59,6 @@ Since 2012, we have been offering management consultancy in a wide range of busi
 - Overview of your transactions
 - Coaching
 
-### Translations of all types
-
-- German
-- English
-- Russian
-- Spanish
-- Other languages available on request
-
 ### Business and private correspondence
 
   - Forms
@@ -77,7 +69,6 @@ Since 2012, we have been offering management consultancy in a wide range of busi
     + Claims
     + Orders
     + Negotiations
-
 
 ### Market research
 

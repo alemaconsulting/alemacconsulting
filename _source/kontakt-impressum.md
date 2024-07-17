@@ -2,7 +2,7 @@
 slug: kontakt-impressum
 title: "Kontakt & Impressum"
 date: '2024-04-03'
-weight: 0.11
+weight: 110
 author: "tedzury"
 description: "Kontakt & Impressum"
 ---

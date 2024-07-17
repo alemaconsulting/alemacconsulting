@@ -1,10 +1,10 @@
 ---
 slug: business-plaene
-title: "Business-Plaene"
+title: "Business-Pläne"
 date: '2024-04-03'
-weight: 0.03
+weight: 40
 author: "tedzury"
-description: 'Business-Plaene'
+description: 'Business-Pläne'
 ---
 # Business-Pläne
 

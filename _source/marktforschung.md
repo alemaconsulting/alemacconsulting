@@ -2,7 +2,7 @@
 slug: marktforschung
 title: "Marktforschung"
 date: '2024-04-03'
-weight: 0.07
+weight: 70
 author: "tedzury"
 description: "Marktforschung"
 ---
