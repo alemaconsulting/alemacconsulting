@@ -4,6 +4,9 @@ const config: Config = {
 	content: ['./**/*.{tsx, html}'],
 	theme: {
 		extend: {
+			fontFamily: {
+				nunito: ['Nunito', 'sans-serif'],
+			},
 			colors: {
 				gradBacking: 'rgb(248,251,254)',
 				primeText: 'rgb(40, 53, 72)',

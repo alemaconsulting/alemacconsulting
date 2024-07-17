@@ -1,4 +1,4 @@
-import { Suspense } from 'react';
+import { ReactElement, Suspense } from 'react';
 
 import Footer from '@/components/footer/footer';
 import Header from '@/components/header/header';
@@ -6,7 +6,7 @@ import ModalNav from '@/components/modalNav/modalNav';
 import Navigation from '@/components/nav/navigation';
 
 type PropsType = {
-  children: React.ReactElement;
+  children: ReactElement;
   linksData: { slug: string; title: string }[];
 };
 

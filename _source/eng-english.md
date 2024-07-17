@@ -79,3 +79,5 @@ Since 2012, we have been offering management consultancy in a wide range of busi
   - Analysis of competitors
   - Analysis of target groups
   - Site/location analysis
+
+<p>Website developed by <a title="developer andron13" href="https://andron13.de" target="_blank">andron13</a></p>

@@ -4,34 +4,47 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-body {
-  font-family: 'Nunito', sans-serif;
-  line-height: 1.6;
-  color: #333;
+@layer base {
+  body {
+    @apply font-nunito leading-relaxed;
+  }
+  header {
+    @apply flex w-full items-center justify-between rounded-lg border-2 border-borderGrey bg-gradBacking bg-horizontalBgGrad p-4 md:px-8 md:py-3 lg:py-5;
+  }
+  footer {
+    @apply flex w-full items-center justify-center gap-3 border-t-2 border-t-borderGrey pt-2 text-sm font-bold sm:gap-[175px] sm:text-base md:pt-4 lg:gap-[360px] lg:text-lg;
+  }
 }
 
 @layer components {
   .contentUL {
     @apply ml-6 mt-3 list-disc text-base sm:ml-9 sm:text-lg sm:font-extrabold;
   }
+
   .routeLink {
     @apply block h-full w-full truncate text-xl leading-10 transition-all duration-300 hover:text-[21px] hover:text-accentPink;
   }
+
   .contentSectionWrapper {
     @apply w-full py-5 font-bold sm:rounded-lg sm:border-2 sm:border-borderGrey sm:bg-gradBacking sm:bg-horizontalBgGrad sm:px-10 sm:py-4 xl:px-16 xl:py-8;
   }
+
   .h1Styles {
     @apply m-5 text-center text-2xl lg:font-extrabold;
   }
+
   .h2Styles {
     @apply m-5 text-center text-lg lg:font-extrabold;
   }
+
   .h3Styles {
     @apply relative m-5 text-lg font-extrabold before:absolute before:left-[-20px] before:top-[6px] before:h-[10px] before:w-[17px] before:rotate-[-50deg] before:rounded-sm before:border-b-[4px] before:border-l-[4px] before:border-checkGreen before:content-[''] sm:ml-3 sm:text-2xl sm:before:left-[-35px] sm:before:top-[2px] sm:before:h-[15px] sm:before:w-[25px] sm:before:border-b-[5px] sm:before:border-l-[5px];
   }
+
   .h4Styles {
     @apply m-5 text-xl font-extrabold;
   }
+
   .pStyles {
     @apply m-5 text-lg lg:font-extrabold;
   }

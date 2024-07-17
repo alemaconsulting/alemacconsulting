@@ -80,3 +80,6 @@ description: 'Rus - русский'
 - Анализ конкурентоспособности и изучение конкурентов
 - Исследование целевой группы
 - Анализ местоположения
+
+
+<p>Website developed by <a title="создатель сайта andron13" href="https://andron13.de" target="_blank">andron13</a></p>
