@@ -12,27 +12,27 @@ body {
 
 @layer components {
   .contentUL {
-    @apply ml-6 mt-3 list-disc text-base sm:ml-9 sm:text-lg sm:font-extrabold
+    @apply ml-6 mt-3 list-disc text-base sm:ml-9 sm:text-lg sm:font-extrabold;
   }
   .routeLink {
-    @apply hover:text-accentPink block h-full w-full truncate text-xl leading-10 transition-all duration-300 hover:text-[21px]
+    @apply block h-full w-full truncate text-xl leading-10 transition-all duration-300 hover:text-[21px] hover:text-accentPink;
   }
   .contentSectionWrapper {
-    @apply w-full py-5 font-bold sm:rounded-lg sm:border-2 sm:border-borderGrey sm:bg-gradBacking sm:bg-horizontalBgGrad sm:px-10 sm:py-4 xl:px-16 xl:py-8
+    @apply w-full py-5 font-bold sm:rounded-lg sm:border-2 sm:border-borderGrey sm:bg-gradBacking sm:bg-horizontalBgGrad sm:px-10 sm:py-4 xl:px-16 xl:py-8;
   }
   .h1Styles {
-    @apply m-5 text-center text-2xl lg:font-extrabold
+    @apply m-5 text-center text-2xl lg:font-extrabold;
   }
   .h2Styles {
-    @apply m-5 text-center text-lg lg:font-extrabold
+    @apply m-5 text-center text-lg lg:font-extrabold;
   }
   .h3Styles {
-    @apply relative before:border-checkGreen before:absolute before:left-[-20px] before:top-[6px] before:h-[10px] before:w-[17px] before:rotate-[-50deg] before:rounded-sm before:border-b-[4px] before:border-l-[4px] before:content-[''] sm:before:w-[25px] sm:before:h-[15px] sm:before:border-b-[5px] sm:before:border-l-[5px] sm:before:top-[2px] sm:before:left-[-35px] text-lg font-extrabold sm:ml-3 sm:text-2xl m-5
+    @apply relative m-5 text-lg font-extrabold before:absolute before:left-[-20px] before:top-[6px] before:h-[10px] before:w-[17px] before:rotate-[-50deg] before:rounded-sm before:border-b-[4px] before:border-l-[4px] before:border-checkGreen before:content-[''] sm:ml-3 sm:text-2xl sm:before:left-[-35px] sm:before:top-[2px] sm:before:h-[15px] sm:before:w-[25px] sm:before:border-b-[5px] sm:before:border-l-[5px];
   }
   .h4Styles {
-    @apply m-5 text-xl font-extrabold
+    @apply m-5 text-xl font-extrabold;
   }
   .pStyles {
-    @apply m-5 text-lg lg:font-extrabold
+    @apply m-5 text-lg lg:font-extrabold;
   }
 }

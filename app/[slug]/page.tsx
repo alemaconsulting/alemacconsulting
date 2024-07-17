@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 
 import MainLayout from '@/layouts/mainLayout';
-import { defaultMetaObj, SITE_URL } from '@/shared/constants';
+import { defaultMetaObj } from '@/shared/constants';
 import { getAllPostsData } from '@/shared/helpers/getAllPostsData';
 import { getAllPostSlugs } from '@/shared/helpers/getAllPostsSlugs';
 import MdToHtml from '@/shared/helpers/mdToHtml';
@@ -14,8 +14,7 @@ type Props = {
 };
 
 export async function generateStaticParams() {
-  const allPosts = await getAllPostSlugs();
-  return allPosts;
+  return await getAllPostSlugs();
 }
 
 export const dynamicParams = false;

@@ -9,26 +9,17 @@ description: "Kontakt & Impressum"
 
 Alema Consulting
 
-Siemensstr. 13
-
-12247 Berlin
-
-
 Tel. 030 8562 9694
-Mob. 0170 3707021
 
+Mob. 0170 3707021
 
 E-Mail: info@alema-consulting.de
 
-Web-Seite: www.alema-consulting.de
-
-[www.alema-consulting.de](www.alema-consulting.de)
+Web-Seite: [alema-consulting.de](https://alema-consulting.de)
 
 Vertreten durch:
 
-
 Inhaberin Svetlana Jameson, Dipl.-Kauffrau / MBA
-
 
 Steuer-Nr. 16/363/00534
 
@@ -45,20 +36,16 @@ Informationen bzw. durch die Nutzung fehlerhafter und unvollständiger Informati
 verursacht wurden, sind grundsätzlich ausgeschlossen, sofern seitens des Autors kein
 nachweislich vorsätzliches oder grob fahrlässiges Verschulden vorliegt.
 
-
 Alle Angebote sind freibleibend und unverbindlich. Der Autor behält es sich ausdrücklich
 vor, Teile der Seiten oder das gesamte Angebot ohne gesonderte Ankündigung zu verändern, zu
 ergänzen, zu löschen oder die Veröffentlichung zeitweise oder endgültig einzustellen.
-
 
 Diese Webseite ist auch in anderen Sprachen verfügbar. Soweit Korrespondenz in fremder
 Sprache geführt wird oder Information und Hinweise in fremder Sprache abgefasst werden, ist
 im Falle von Widersprüchen zwischen der deutschen und anderen Versionen die deutsche Fassung
 maßgeblich.
 
-
 ## URHEBERRECHT
-
 
 Falls nicht anders angegeben, unterliegen alle Seiten dieses Online-Angebotes dem
 Urheberrecht (Copyright). Dies gilt für Texte, Bilder und Grafiken, einschließlich deren
@@ -68,10 +55,8 @@ Eine Vervielfältigung oder Verwendung von unserer Webseite (oder Teilen davon) 
 elektronischen oder gedruckten Publikationen und deren Veröffentlichung (auch im Internet)
 ist nur nach vorheriger Genehmigung gestattet.
 
-
 Weiterhin können Bilder, Grafiken, Texte oder sonstige Dateien ganz oder teilweise dem
 Urheberrecht Dritter unterliegen.
-
 
 Alle hier genannten und ggf. durch Dritte geschützten Marken- und Warenzeichen unterliegen
 uneingeschränkt den Bestimmungen des jeweils gültigen Kennzeichenrechts und den
@@ -79,16 +64,13 @@ Besitzrechten der jeweiligen eingetragenen Eigentümer. Allein aufgrund der blo�
 unserem Internetangebot ist nicht der Schluss zu ziehen, dass Markenzeichen nicht durch
 Rechte Dritter geschützt sind.
 
-
 ## VERWEISE UND LINKS (DISCLAIMER)
-
 
 Bei direkten oder indirekten Verweisen auf fremde Websites ("Hyperlinks"), die außerhalb des
 Verantwortungsbereiches des Autors liegen, würde eine Haftungsverpflichtung ausschließlich
 in dem Fall in Kraft treten, in dem der Autor von den Inhalten Kenntnis hat und es ihm
 technisch möglich und zumutbar wäre, die Nutzung im Falle rechtswidriger Inhalte zu
 verhindern.
-
 
 Der Autor erklärt hiermit ausdrücklich, dass zum Zeitpunkt der Linksetzung keine illegalen
 Inhalte auf den zu verlinkenden Seiten erkennbar waren. Auf die aktuelle und zukünftige
@@ -106,12 +88,10 @@ derjenige, der über Links auf die jeweilige Veröffentlichung lediglich verweis
 
 ## DATENSCHUTZ AUF EINEN BLICK
 
-
 Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. Dessen
 Kontaktdaten können Sie dem Impressum dieser Website entnehmen. Ihre Daten werden zum einen
 dadurch erhoben, dass Sie uns diese mitteilen. Hierbei kann es sich z.B. um Daten handeln,
 die Sie uns per E-Mail oder per Fax geben oder per Telefon mitteilen.
-
 
 Sie haben jederzeit das Recht unentgeltlich Auskunft über Herkunft, Empfänger und Zweck
 Ihrer gespeicherten personenbezogenen Daten zu erhalten. Sie haben außerdem ein Recht, die
@@ -132,34 +112,27 @@ Personenbezogene Daten sind Daten, mit denen Sie persönlich identifiziert werde
 vorliegende Datenschutzerklärung erläutert, welche Daten wir erheben und wofür wir sie
 nutzen. Sie erläutert auch, wie und zu welchem Zweck das geschieht.
 
-
 Wir weisen darauf hin, dass die Datenübertragung im Internet (z.B. bei der Kommunikation per
 E-Mail) Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff
 durch Dritte ist nicht möglich.
 
-Hinweis zur verantwortlichen Stelle
-
+### Hinweis zur verantwortlichen Stelle
 
 Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website können Sie dem
 Impressum dieser Website entnehmen.
-
 
 Verantwortliche Stelle ist die natürliche oder juristische Person, die allein oder gemeinsam
 mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten (z.B.
 Namen, E-Mail-Adressen o. Ä.) entscheidet.
 
-
-Widerruf Ihrer Einwilligung zur Datenverarbeitung
-
+### Widerruf Ihrer Einwilligung zur Datenverarbeitung
 
 Viele Datenverarbeitungsvorgänge sind nur mit Ihrer ausdrücklichen Einwilligung möglich. Sie
 können eine bereits erteilte Einwilligung jederzeit widerrufen. Dazu reicht eine formlose
 Mitteilung per E-Mail an uns. Die Rechtmäßigkeit der bis zum Widerruf erfolgten
 Datenverarbeitung bleibt vom Widerruf unberührt.
 
-
-Beschwerderecht bei der zuständigen Aufsichtsbehörde
-
+### Beschwerderecht bei der zuständigen Aufsichtsbehörde
 
 Im Falle datenschutzrechtlicher Verstöße steht dem Betroffenen ein Beschwerderecht bei der
 zuständigen Aufsichtsbehörde zu. Zuständige Aufsichtsbehörde in datenschutzrechtlichen
@@ -168,9 +141,7 @@ seinen Sitz hat. Eine Liste der Datenschutzbeauftragten sowie deren Kontaktdaten
 folgendem Link entnommen werden:
 https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links- node.html.
 
-
-Recht auf Datenübertragbarkeit
-
+### Recht auf Datenübertragbarkeit
 
 Sie haben das Recht, Daten, die wir auf Grundlage Ihrer Einwilligung oder in Erfüllung eines
 Vertrags automatisiert verarbeiten, an sich oder an einen Dritten in einem gängigen,
@@ -178,9 +149,7 @@ maschinenlesbaren Format aushändigen zu lassen. Sofern Sie die direkte Übertra
 an einen anderen Verantwortlichen verlangen, erfolgt dies nur, soweit es technisch machbar
 ist.
 
-
-Auskunft, Sperrung, Löschung
-
+### Auskunft, Sperrung, Löschung
 
 Sie haben im Rahmen der geltenden gesetzlichen Bestimmungen jederzeit das Recht auf
 unentgeltliche Auskunft über Ihre gespeicherten personenbezogenen Daten, deren Herkunft und
@@ -190,28 +159,23 @@ können Sie sich jederzeit unter der im Impressum angegebenen Adresse an uns wen
 
 ## DATENERFASSUNG AUF UNSERER WEBSITE
 
-
-Cookies
-
+### Cookies
 
 Die Internetseiten verwenden teilweise so genannte Cookies. Cookies richten auf Ihrem
 Rechner keinen Schaden an und enthalten keine Viren. Cookies dienen dazu, unser Angebot
 nutzerfreundlicher, effektiver und sicherer zu machen. Cookies sind kleine Textdateien, die
 auf Ihrem Rechner abgelegt werden und die Ihr Browser speichert.
 
-
 Die meisten der von uns verwendeten Cookies sind so genannte "Session-Cookies". Sie werden
 nach Ende Ihres Besuchs automatisch gelöscht. Andere Cookies bleiben auf Ihrem Endgerät
 gespeichert bis Sie diese löschen. Diese Cookies ermöglichen es uns, Ihren Browser beim
 nächsten Besuch wiederzuerkennen.
-
 
 Sie können Ihren Browser so einstellen, dass Sie über das Setzen von Cookies informiert
 werden und Cookies nur im Einzelfall erlauben, die Annahme von Cookies für bestimmte Fälle
 oder generell ausschließen sowie das automatische Löschen der Cookies beim Schließen des
 Browser aktivieren. Bei der Deaktivierung von Cookies kann die Funktionalität dieser Website
 eingeschränkt sein.
-
 
 Cookies, die zur Durchführung des elektronischen Kommunikationsvorgangs oder zur
 Bereitstellung bestimmter, von Ihnen erwünschter Funktionen (z.B. Warenkorbfunktion)
@@ -221,15 +185,12 @@ fehlerfreien und optimierten Bereitstellung seiner Dienste. Soweit andere Cookie
 Cookies zur Analyse Ihres Surfverhaltens) gespeichert werden, werden diese in dieser
 Datenschutzerklärung gesondert behandelt.
 
-
-Verarbeiten von Daten (Kunden- und Vertragsdaten)
-
+### Verarbeiten von Daten (Kunden- und Vertragsdaten)
 
 Die uns zur Verfügung gestellten Daten verbleiben bei uns, bis Sie uns zur Löschung
 auffordern, Ihre Einwilligung zur Speicherung widerrufen oder der Zweck für die
 Datenspeicherung entfällt (z.B. nach abgeschlossener Bearbeitung Ihrer Anfrage). Zwingende
 gesetzliche Bestimmungen – insbesondere Aufbewahrungsfristen – bleiben unberührt.
-
 
 Wir erheben, verarbeiten und nutzen personenbezogene Daten nur, soweit sie für die
 Begründung, inhaltliche Ausgestaltung oder Änderung des Rechtsverhältnisses erforderlich
@@ -243,9 +204,7 @@ dem Nutzer die Inanspruchnahme des Dienstes zu ermöglichen oder abzurechnen.
 Die erhobenen Kundendaten werden nach Abschluss des Auftrags oder Beendigung der
 Geschäftsbeziehung gelöscht. Gesetzliche Aufbewahrungsfristen bleiben unberührt.
 
-
 Datenübermittlung bei Vertragsschluss für Dienstleistungen und digitale Inhalte
-
 
 Wir übermitteln personenbezogene Daten an Dritte nur dann, wenn dies im Rahmen der
 Vertragsabwicklung notwendig ist, etwa an das mit der Zahlungsabwicklung beauftragte
@@ -253,22 +212,18 @@ Kreditinstitut oder an den verantwortlichen Krankenkassen.
 
 ## PLUGINS UND TOOLS
 
-Google Maps
-
+### Google Maps
 
 Diese Seite nutzt über eine API den Kartendienst Google Maps. Anbieter ist die Google Inc.,
 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA.
-
 
 Zur Nutzung der Funktionen von Google Maps ist es notwendig, Ihre IP Adresse zu speichern.
 Diese Informationen werden in der Regel an einen Server von Google in den USA übertragen und
 dort gespeichert. Der Anbieter dieser Seite hat keinen Einfluss auf diese Datenübertragung.
 
-
 Die Nutzung von Google Maps erfolgt im Interesse einer ansprechenden Darstellung unserer
 Online-Angebote und an einer leichten Auffindbarkeit der von uns auf der Website angegebenen
 Orte. Dies stellt ein berechtigtes Interesse im Sinne von Art. 6 Abs. 1 lit. f DSGVO dar.
-
 
 Mehr Informationen zum Umgang mit Nutzerdaten finden Sie in der Datenschutzerklärung von
 Google: https://www.google.de/intl/de/policies/privacy/.
