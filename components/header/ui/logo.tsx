@@ -1,9 +1,18 @@
+import Image from 'next/image';
+import Link from 'next/link';
+
 const Logo = () => {
   return (
-    <section className="flex select-none items-center md:w-[33%] md:flex-col">
-      <img
-        alt="Alema consunlting logo: triangle composed from differently shaped blue parts."
-        src="../assets/Logo_triangle.svg"
+    <Link
+      href="/"
+      title="Unternehmensberatung und Consulting in Berlin"
+      className="flex select-none items-center md:w-[33%] md:flex-col"
+    >
+      <Image
+        alt="Unternehmensberatung in Berlin"
+        src="/assets/Logo_triangle.svg"
+        width={118}
+        height={99}
         className="h-[46px] w-[55px] lg:h-[99px] lg:w-[118px]"
       />
       <div className="text-center text-primeText md:mt-[7px]">
@@ -17,7 +26,7 @@ const Logo = () => {
           Unternehmensberatung
         </p>
       </div>
-    </section>
+    </Link>
   );
 };
 

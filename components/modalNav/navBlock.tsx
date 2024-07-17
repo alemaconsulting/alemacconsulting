@@ -25,7 +25,10 @@ const NavBlock = ({ closeModal, linksData }: PropsType) => {
 
   return (
     <nav className="absolute right-0 top-0 z-20 w-[250px] cursor-auto rounded-bl-xl rounded-tl-xl bg-paleBlue px-6 py-3">
-      <XMarkIcon onClick={closeModal} className="absolute right-[20px] top-[20px] z-20 h-12 w-12" />
+      <XMarkIcon
+        onClick={closeModal}
+        className="absolute right-[20px] top-[20px] z-20 h-12 w-12 cursor-pointer"
+      />
       <ul className="mt-[72px] border-b-2 border-borderGrey">
         <li className="h-11 w-full border-t-2 border-borderGrey text-center">
           <Link

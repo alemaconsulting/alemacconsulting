@@ -16,6 +16,7 @@ const Navigation = ({ linksData }: PropsType) => {
         <Link
           href={link.slug}
           className={`routeLink ${isActiveLink(`/${link.slug}`) ? 'text-brightBlue' : ''}`}
+          title={link.title}
         >
           {link.title}
         </Link>
