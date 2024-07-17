@@ -11,6 +11,13 @@ description: "Eng-english"
 
 Since 2012, we have been offering management consultancy in a wide range of business areas:
 
+### Starting your own busines
+
+- Support for business start-ups
+- Legal forms
+- Calculations
+- Preparation of business plans
+
 ### Product and supplier search
 
 - Product search
@@ -33,21 +40,12 @@ Since 2012, we have been offering management consultancy in a wide range of busi
 - Net/gross calculator for employers
 - Plus many more on request
 
-
 ### Business plans
 
 - Establishing a new company
 - New projects
 - Getting a bank loan
 - Major purchases
-
-
-### Starting your own busines
-
-- Support for business start-ups
-- Legal forms
-- Calculations
-- Preparation of business plans
 
 ### Presentations
 
@@ -74,11 +72,11 @@ Since 2012, we have been offering management consultancy in a wide range of busi
   - Forms
   - Correspondence
   - Business correspondence:
-    - Queries
-    - Complaints
-    - Claims
-    - Orders
-    - Negotiations
+    + Queries
+    + Complaints
+    + Claims
+    + Orders
+    + Negotiations
 
 
 ### Market research
