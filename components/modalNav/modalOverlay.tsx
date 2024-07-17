@@ -1,15 +1,15 @@
-import { JSX } from 'react';
+import { JSX, MouseEvent, KeyboardEvent } from 'react';
+
 type PropsType = {
   closeModal: () => void;
   children?: JSX.Element;
 };
 
 const ModalOverlay = ({ children, closeModal }: PropsType) => {
-  function closeHandler(
-    e: React.MouseEvent<HTMLDialogElement, MouseEvent> | React.KeyboardEvent<HTMLDialogElement>
-  ) {
+  function closeHandler(e: MouseEvent<HTMLDialogElement> | KeyboardEvent<HTMLDialogElement>) {
     if ((e.target as HTMLButtonElement).hasAttribute('data-overlay')) closeModal();
   }
+
   return (
     <dialog
       data-overlay
