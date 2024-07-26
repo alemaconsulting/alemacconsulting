@@ -227,3 +227,7 @@ Orte. Dies stellt ein berechtigtes Interesse im Sinne von Art. 6 Abs. 1 lit. f D
 
 Mehr Informationen zum Umgang mit Nutzerdaten finden Sie in der Datenschutzerklärung von
 Google: https://www.google.de/intl/de/policies/privacy/.
+
+### Webdesign and Development
+
+Diese Website wurde von [andron13](https://andron13.de) und [Zinsrechner](https://eb.by/zinsrechner) entwickelt.
