@@ -8,10 +8,6 @@ import MdToHtml from '@/shared/helpers/mdToHtml';
 import { resultObj } from '@/shared/types';
 
 type LinksData = { slug: string; title: string }[];
-type Props = {
-  params: { slug: string };
-  searchParams: { [key: string]: string | string[] | undefined };
-};
 
 export async function generateStaticParams() {
   return await getAllPostSlugs();
@@ -19,33 +15,23 @@ export async function generateStaticParams() {
 
 export const dynamicParams = false;
 
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
   const allPostsData = await getAllPostsData();
-  const post = allPostsData.find((post) => post.slug === params.slug);
+  const post = allPostsData.find((post) => post.slug === slug);
 
-  if (post) {
-    return {
-      title: post.title,
-      description: post.description,
-      // openGraph: {
-      //   title: post.title,
-      //   description: post.description,
-      //   // url: SITE_URL,
-      //   siteName: 'Alema consulting',
-      //   images: [
-      //     {
-      //       url: `assets/opengraph-image.jpg`,
-      //       width: 677,
-      //       height: 508,
-      //     },
-      //   ],
-      //   locale: 'de',
-      //   type: 'website',
-      // },
-    };
-  } else {
+  if (!post) {
     return defaultMetaObj;
   }
+
+  return {
+    title: post.title,
+    description: post.description,
+  };
 }
 
 async function getPostsData(slug: string) {
@@ -58,20 +44,23 @@ async function getPostsData(slug: string) {
         title: post.title,
       }));
     const post = allPostsData.find((post) => post.slug === slug);
-    if (post) {
-      const { content, ...postMetadata } = post;
-      return { content, postMetadata, linksData };
-    } else {
+
+    if (!post) {
       throw new Error('No post!');
     }
+
+    const { content, ...postMetadata } = post;
+    return { content, postMetadata, linksData };
   } catch (error) {
     return { notFound: true };
   }
 }
 
-const ContentPage = async ({ params }: { params: { slug: string } }) => {
-  const { content, postMetadata, linksData } = await getPostsData(params.slug);
+export default async function ContentPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const { content, postMetadata, linksData } = await getPostsData(slug);
   const pageContent = content && postMetadata ? content : '<div>No such page...</div>';
+
   return (
     <MainLayout linksData={linksData as LinksData}>
       <article className="contentSectionWrapper">
@@ -79,6 +68,4 @@ const ContentPage = async ({ params }: { params: { slug: string } }) => {
       </article>
     </MainLayout>
   );
-};
-
-export default ContentPage;
+}

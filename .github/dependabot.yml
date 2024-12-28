@@ -7,13 +7,17 @@ updates:
     reviewers:
       - 'andron13'
     commit-message:
-      prefix: 'deps'
+      prefix: 'chore'
     groups:
       production-dependencies:
         dependency-type: 'production'
       development-dependencies:
         dependency-type: 'development'
-    open-pull-requests-limit: 5
     ignore:
       - dependency-name: 'eslint'
-        update-types: [ 'version-update:semver-major' ]
+        update-types: ['version-update:semver-major']
+      - dependency-name: '@typescript-eslint/eslint-plugin'
+      - dependency-name: '@typescript-eslint/parser'
+      - dependency-name: 'typescript'
+      - dependency-name: 'react'
+      - dependency-name: 'react-dom'
