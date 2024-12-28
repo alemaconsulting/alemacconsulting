@@ -6,11 +6,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "type-check": "tsc --noEmit",
+    "typecheck": "tsc --noEmit",
     "ncu:check": "ncu",
     "ncu:update": "ncu --interactive",
-    "eslint": "eslint --ext .js --ext .jsx --ext .ts --ext .tsx ./",
-    "eslint:fix": "eslint --fix --ext .js --ext .jsx --ext .ts --ext .tsx ./",
+    "lint": "eslint --ext .js --ext .jsx --ext .ts --ext .tsx ./",
+    "lint:fix": "eslint --fix --ext .js --ext .jsx --ext .ts --ext .tsx ./",
     "format:fix": "prettier --write \"./**/*.{ts,tsx,css}\"",
     "pre-commit": "lint-staged"
   },
@@ -50,7 +50,12 @@
     "typescript": "^5.7.2"
   },
   "lint-staged": {
-    "./src/**/*.{tsx, ts}": "npm run eslint:fix",
-    "./src/**/*.{tsx, ts, html, css}": "npm run format:fix"
+    "**/*.{js,jsx,ts,tsx}": [
+      "npm run lint:fix",
+      "npm run format:fix"
+    ],
+    "**/*.{json,css,scss,html,md}": [
+      "npm run format:fix"
+    ]
   }
 }
