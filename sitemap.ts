@@ -20,6 +20,5 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 			priority: 0.8,
 		};
 	});
-	const result = [homepage, ...contentPages] as MetadataRoute.Sitemap;
-	return result;
+	return [homepage, ...contentPages] as MetadataRoute.Sitemap;
 }
