@@ -14,10 +14,6 @@ updates:
       development-dependencies:
         dependency-type: 'development'
     ignore:
-      - dependency-name: 'eslint'
-        update-types: ['version-update:semver-major']
-      - dependency-name: '@typescript-eslint/eslint-plugin'
-      - dependency-name: '@typescript-eslint/parser'
-      - dependency-name: 'typescript'
+      - dependency-name: 'tailwindcss'
       - dependency-name: 'react'
       - dependency-name: 'react-dom'

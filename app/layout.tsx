@@ -1,8 +1,8 @@
 import { ReactNode } from 'react';
 
-import type { Metadata } from 'next';
-
 import { defaultMetaObj } from '@/shared/constants';
+
+import type { Metadata } from 'next';
 
 import '../styles/globals.css';
 

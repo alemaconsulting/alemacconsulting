@@ -12,7 +12,7 @@ const ModalOverlay = ({ children, closeModal }: PropsType) => {
 
   return (
     <dialog
-      data-overlay
+      data-overlay="true"
       onClick={(e) => closeHandler(e)}
       className="overlay pointer-events-auto absolute left-0 top-0 z-10 flex h-full w-full justify-start bg-black/40"
     >
