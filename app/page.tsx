@@ -1,5 +1,5 @@
-import HomepageLayout from '@/layouts/homepageLayout';
-import MainLayout from '@/layouts/mainLayout';
+import Frontpage from '@/components/frontpage';
+import MainLayout from '@/layouts/main-layout';
 import { getAllPostsData } from '@/shared/helpers/getAllPostsData';
 import { resultObj } from '@/shared/types';
 
@@ -17,7 +17,7 @@ const Index = async () => {
   const linksData = await getAllPosts();
   return (
     <MainLayout linksData={linksData}>
-      <HomepageLayout />
+      <Frontpage />
     </MainLayout>
   );
 };

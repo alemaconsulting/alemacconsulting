@@ -2,8 +2,8 @@
 
 import { useSearchParams, useRouter } from 'next/navigation';
 
-import ModalOverlay from './modalOverlay';
-import NavBlock from './navBlock';
+import ModalOverlay from './modal-overlay';
+import NavBlock from './nav-block';
 
 type PropsType = {
   linksData: { slug: string; title: string }[];
