@@ -2,7 +2,7 @@ import { ReactElement, Suspense } from 'react';
 
 import Footer from '@/components/footer/footer';
 import Header from '@/components/header/header';
-import ModalNav from '@/components/modalNav/modalNav';
+import ModalNav from '@/components/modal-nav/modal-nav';
 import Navigation from '@/components/nav/navigation';
 
 type PropsType = {

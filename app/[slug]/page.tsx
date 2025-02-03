@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 
-import MainLayout from '@/layouts/mainLayout';
+import MainLayout from '@/layouts/main-layout';
 import { defaultMetaObj } from '@/shared/constants';
 import { getAllPostsData } from '@/shared/helpers/getAllPostsData';
 import { getAllPostSlugs } from '@/shared/helpers/getAllPostsSlugs';

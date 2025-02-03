@@ -1,4 +1,4 @@
-import MainLayout from '@/layouts/mainLayout';
+import MainLayout from '@/layouts/main-layout';
 import { getAllPostsData } from '@/shared/helpers/getAllPostsData';
 import { resultObj } from '@/shared/types';
 
