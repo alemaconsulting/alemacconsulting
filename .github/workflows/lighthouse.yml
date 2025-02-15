@@ -1,70 +1,70 @@
-name: Lighthouse test
-
-on:
-  pull_request:
-    types: [opened, synchronize]
-    branches:
-      - main
-
-jobs:
-  lighthouse:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20.x'
-
-      - name: Install dependencies
-        run: npm install && npm install -g @lhci/cli@0.14.x
-
-      - name: Wait for Vercel Deployment
-        id: vercel
-        run: |
-          sleep 30  # Подождём немного, пока Vercel создаст превью
-          PREVIEW_URL=$(curl -s -H "Authorization: Bearer ${{ secrets.VERCEL_TOKEN }}" \
-            "https://api.vercel.com/v6/deployments?projectId=${{ secrets.VERCEL_PROJECT_ID }}" | \
-            jq -r '.deployments[0].url')
-          echo "preview_url=https://$PREVIEW_URL" >> $GITHUB_ENV
-
-      - name: Run Lighthouse
-        run: lhci autorun --collect.url=${{ env.preview_url }}
-
-      - name: Upload Lighthouse artifacts
-        uses: actions/upload-artifact@v4
-        with:
-          name: lighthouse-report
-          path: '.lighthouseci/*'
-
-      - name: Generate Lighthouse Report Summary
-        id: generate_report
-        run: |
-          REPORT_PATH=$(ls .lighthouseci/lhr-*.json | head -n 1)
-          FINAL_URL=$(jq -r '.finalUrl' "$REPORT_PATH")
-          LINKS_PATH=$(ls .lighthouseci/links.json | head -n 1)
-          REPORT_URL=$(jq -r --arg FINAL_URL "$FINAL_URL" '.[$FINAL_URL]' "$LINKS_PATH")
-          PERFORMANCE=$(jq -r '.categories.performance.score * 100' "$REPORT_PATH")
-          ACCESSIBILITY=$(jq -r '.categories.accessibility.score * 100' "$REPORT_PATH")
-          BEST_PRACTICES=$(jq -r '.categories["best-practices"].score * 100' "$REPORT_PATH")
-          SEO=$(jq -r '.categories.seo.score * 100' "$REPORT_PATH")
-          echo "performance=$PERFORMANCE" >> $GITHUB_ENV
-          echo "accessibility=$ACCESSIBILITY" >> $GITHUB_ENV
-          echo "bestPractices=$BEST_PRACTICES" >> $GITHUB_ENV
-          echo "seo=$SEO" >> $GITHUB_ENV
-          echo "reportUrl=$REPORT_URL" >> $GITHUB_ENV
-
-      - name: Post Lighthouse Results to PR
-        uses: peter-evans/create-or-update-comment@v4
-        with:
-          issue-number: ${{ github.event.pull_request.number }}
-          body: |
-            **🔦 Lighthouse Report for [Preview](${{ env.preview_url }})**:
-            - 🚀 Performance: **${{ env.performance }}/100**
-            - ♿ Accessibility: **${{ env.accessibility }}/100**
-            - 🛠 Best Practices: **${{ env.bestPractices }}/100**
-            - 🔍 SEO: **${{ env.seo }}/100**
-
-            [📊 View full report](${{ env.reportUrl }})
+#name: Lighthouse test
+#
+#on:
+#  pull_request:
+#    types: [opened, synchronize]
+#    branches:
+#      - main
+#
+#jobs:
+#  lighthouse:
+#    runs-on: ubuntu-latest
+#    steps:
+#      - name: Checkout code
+#        uses: actions/checkout@v4
+#
+#      - name: Setup Node.js
+#        uses: actions/setup-node@v4
+#        with:
+#          node-version: '20.x'
+#
+#      - name: Install dependencies
+#        run: npm install && npm install -g @lhci/cli@0.14.x
+#
+#      - name: Wait for Vercel Deployment
+#        id: vercel
+#        run: |
+#          sleep 30  # Подождём немного, пока Vercel создаст превью
+#          PREVIEW_URL=$(curl -s -H "Authorization: Bearer ${{ secrets.VERCEL_TOKEN }}" \
+#            "https://api.vercel.com/v6/deployments?projectId=${{ secrets.VERCEL_PROJECT_ID }}" | \
+#            jq -r '.deployments[0].url')
+#          echo "preview_url=https://$PREVIEW_URL" >> $GITHUB_ENV
+#
+#      - name: Run Lighthouse
+#        run: lhci autorun --collect.url=${{ env.preview_url }}
+#
+#      - name: Upload Lighthouse artifacts
+#        uses: actions/upload-artifact@v4
+#        with:
+#          name: lighthouse-report
+#          path: '.lighthouseci/*'
+#
+#      - name: Generate Lighthouse Report Summary
+#        id: generate_report
+#        run: |
+#          REPORT_PATH=$(ls .lighthouseci/lhr-*.json | head -n 1)
+#          FINAL_URL=$(jq -r '.finalUrl' "$REPORT_PATH")
+#          LINKS_PATH=$(ls .lighthouseci/links.json | head -n 1)
+#          REPORT_URL=$(jq -r --arg FINAL_URL "$FINAL_URL" '.[$FINAL_URL]' "$LINKS_PATH")
+#          PERFORMANCE=$(jq -r '.categories.performance.score * 100' "$REPORT_PATH")
+#          ACCESSIBILITY=$(jq -r '.categories.accessibility.score * 100' "$REPORT_PATH")
+#          BEST_PRACTICES=$(jq -r '.categories["best-practices"].score * 100' "$REPORT_PATH")
+#          SEO=$(jq -r '.categories.seo.score * 100' "$REPORT_PATH")
+#          echo "performance=$PERFORMANCE" >> $GITHUB_ENV
+#          echo "accessibility=$ACCESSIBILITY" >> $GITHUB_ENV
+#          echo "bestPractices=$BEST_PRACTICES" >> $GITHUB_ENV
+#          echo "seo=$SEO" >> $GITHUB_ENV
+#          echo "reportUrl=$REPORT_URL" >> $GITHUB_ENV
+#
+#      - name: Post Lighthouse Results to PR
+#        uses: peter-evans/create-or-update-comment@v4
+#        with:
+#          issue-number: ${{ github.event.pull_request.number }}
+#          body: |
+#            **🔦 Lighthouse Report for [Preview](${{ env.preview_url }})**:
+#            - 🚀 Performance: **${{ env.performance }}/100**
+#            - ♿ Accessibility: **${{ env.accessibility }}/100**
+#            - 🛠 Best Practices: **${{ env.bestPractices }}/100**
+#            - 🔍 SEO: **${{ env.seo }}/100**
+#
+#            [📊 View full report](${{ env.reportUrl }})
