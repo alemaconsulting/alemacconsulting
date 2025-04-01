@@ -15,11 +15,11 @@
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
-    "framer-motion": "^12.4.10",
+    "framer-motion": "^12.6.2",
     "gray-matter": "^4.0.3",
     "markdown-to-jsx": "^7.7.4",
-    "next": "15.2.1",
-    "npm-check-updates": "^17.1.15",
+    "next": "15.2.4",
+    "npm-check-updates": "^17.1.16",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
