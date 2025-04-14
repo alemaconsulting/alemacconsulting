@@ -6,16 +6,16 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "typecheck": "tsc --noEmit",
-    "ncu:check": "ncu",
-    "ncu:update": "ncu --interactive",
     "lint": "next lint",
     "lint:fix": "next lint --fix",
-    "format:fix": "prettier --write \"./**/*.{ts,tsx,css,mjs,json}\""
+    "format:fix": "prettier --write \"./**/*.{ts,tsx,css,mjs,json}\"",
+    "typecheck": "tsc --noEmit",
+    "ncu:check": "ncu",
+    "ncu:update": "ncu --interactive"
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
-    "framer-motion": "^12.6.5",
+    "framer-motion": "^12.7.0",
     "gray-matter": "^4.0.3",
     "markdown-to-jsx": "^7.7.4",
     "next": "15.3.0",
