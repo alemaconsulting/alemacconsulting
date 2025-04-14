@@ -1,4 +1,4 @@
-import { SITE_URL } from './shared/constants';
+import { SITE_URL } from '@/shared/constants';
 
 import type { MetadataRoute } from 'next';
 
