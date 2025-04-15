@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { twMerge } from 'tailwind-merge';
+
+import { logo } from '@/app/shared/constants';
 
 const Logo = () => {
   return (
@@ -11,7 +12,7 @@ const Logo = () => {
     >
       <Image
         alt="Unternehmensberatung in Berlin"
-        src="/assets/logo-triangle.svg"
+        src={logo}
         width={118}
         height={99}
         className="h-[46px] w-[55px] lg:h-[99px] lg:w-[118px]"

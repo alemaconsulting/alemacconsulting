@@ -1,10 +1,16 @@
-const CONTENT_FOLDER = '_source';
+export const CONTENT_FOLDER = '_source';
 
-const SITE_URL = 'https://alema-consulting.de/';
-const CONTACT_PHONE_ONE = '03085629694';
-const CONTACT_PHONE_TWO = '01703707021';
+export const SITE_URL = 'https://alema-consulting.de/';
+export const CONTACT_PHONE_ONE = '03085629694';
+export const CONTACT_PHONE_TWO = '01703707021';
 
-const defaultMetaObj = {
+
+export const matrix: string = '/assets/Matrix.svg';
+
+export const logo: string = '/assets/logo-triangle.svg';
+
+
+export const defaultMetaObj = {
 	title: {
 		template: '%s | Alema Consulting – Unternehmensberatung in Berlin',
 		default: 'Alema Consulting – Unternehmensberatung in Berlin',
@@ -39,5 +45,3 @@ const defaultMetaObj = {
 		type: 'website',
 	},
 };
-
-export { CONTENT_FOLDER, SITE_URL, CONTACT_PHONE_ONE, CONTACT_PHONE_TWO, defaultMetaObj };
