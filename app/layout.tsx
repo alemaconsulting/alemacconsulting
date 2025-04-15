@@ -17,7 +17,7 @@ const nunito = Nunito({
 export const metadata: Metadata = {
   ...defaultMetaObj,
   icons: {
-    icon: '/favicon.ico',
+    icon: '/assets/icons/favicon.ico',
   },
 };
 // Viewport configuration
