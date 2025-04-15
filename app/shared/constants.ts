@@ -4,7 +4,7 @@ export const SITE_URL = 'https://alema-consulting.de/';
 export const CONTACT_PHONE_ONE = '03085629694';
 export const CONTACT_PHONE_TWO = '01703707021';
 
-export const matrix: string = '/assets/Matrix.svg';
+export const matrix: string = '/assets/matrix.svg';
 export const logo: string = '/assets/logo-triangle.svg';
 
 export const defaultMetaObj = {
