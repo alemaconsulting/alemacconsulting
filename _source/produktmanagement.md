@@ -3,9 +3,19 @@ slug: produktmanagement
 title: 'Produktmanagement'
 date: '2024-04-03'
 weight: 20
-author: 'tedzury'
-description: 'Produktmanagement'
+author: 'andron13'
+description: 'Professionelles Produkt- und Lieferantenmanagement – von der Produktsuche über weltweite Lieferantenanalyse bis zur Optimierung von Beschaffungsprozessen und Ausschreibungen.'
+tags:
+  - Produktmanagement
+  - Lieferantenmanagement
+  - Beschaffung
+  - Produktsuche
+  - Lieferantensuche
+  - Vertragsverhandlungen
+  - Ausschreibungen
+  - Kapitalbindung
 ---
+
 
 # Produkt und Lieferantensuche
 

@@ -3,9 +3,19 @@ slug: korrespondenz
 title: 'Korrespondenz'
 date: '2024-04-03'
 weight: 80
-author: 'tedzury'
-description: 'Korrespondenz'
+author: 'andron13'
+description: 'Professionelle Unterstützung bei privater und geschäftlicher Korrespondenz, Formularen, Schriftverkehr und Übersetzungen in mehreren Sprachen.'
+tags:
+  - Korrespondenz
+  - Schriftverkehr
+  - Bürokratiehilfe
+  - Übersetzungen
+  - Formulare
+  - Geschäftskommunikation
+  - Behördenkontakt
+  - Mehrsprachigkeit
 ---
+
 
 # Führung von Geschäfts- und Privatkorrespondenz aller Art inkl. Übersetzungen
 

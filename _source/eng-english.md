@@ -4,8 +4,18 @@ title: 'Eng - English'
 date: '2024-04-03'
 weight: 90
 author: 'andron13'
-description: 'Eng - English'
+description: 'Business consulting in English: support for start-ups, product and supplier search, financial calculations, business plans, presentations, correspondence, and market analysis.'
+tags:
+  - Business Consulting
+  - Start-up Support
+  - Financial Calculations
+  - Business Plans
+  - Market Research
+  - Presentations
+  - Excel Tools
+  - Supplier Search
 ---
+
 
 # Alema Consulting
 
