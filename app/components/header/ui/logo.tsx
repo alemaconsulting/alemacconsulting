@@ -7,7 +7,7 @@ const Logo = () => {
     <Link
       href="/"
       title="Unternehmensberatung und Consulting in Berlin"
-      className="flex items-center select-none md:w-1/3 md:flex-col gap-2"
+      className="flex items-center gap-2 select-none md:w-1/3 md:flex-col"
     >
       <Image
         alt="Unternehmensberatung in Berlin"
@@ -16,7 +16,7 @@ const Logo = () => {
         height={99}
         className="h-[46px] w-[55px] lg:h-[99px] lg:w-[118px]"
       />
-      <div className="text-text-primary text-center  flex flex-col gap-1">
+      <div className="text-text-primary flex flex-col gap-1 text-center">
         <p className="text-base leading-[20px] font-[800] tracking-[1px] md:tracking-[3px] lg:ml-[12px] lg:text-2xl lg:tracking-[12px]">
           ALEMA
         </p>
