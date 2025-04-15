@@ -16,7 +16,6 @@ tags:
   - Supplier Search
 ---
 
-
 # Alema Consulting
 
 Since 2012, we have been offering management consultancy in a wide range of business areas:

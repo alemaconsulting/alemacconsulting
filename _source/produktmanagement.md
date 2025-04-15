@@ -16,7 +16,6 @@ tags:
   - Kapitalbindung
 ---
 
-
 # Produkt und Lieferantensuche
 
 ## Einkauf und Lieferantenmanagement

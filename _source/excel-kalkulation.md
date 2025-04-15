@@ -16,7 +16,6 @@ tags:
   - Tabellenkalkulation
 ---
 
-
 # Excel-Tabellenkalkulation
 
 ### Organisation der Geschäftsprozesse

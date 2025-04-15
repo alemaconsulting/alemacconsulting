@@ -15,7 +15,6 @@ export async function generateStaticParams() {
 
 export const dynamicParams = false;
 
-
 async function getPostsData(slug: string) {
   try {
     const allPostsData: resultObj[] = await getAllPostsData();
@@ -53,8 +52,8 @@ export default async function ContentPage({ params }: { params: Promise<{ slug: 
 }
 
 export async function generateMetadata({
-                                         params,
-                                       }: {
+  params,
+}: {
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
   const { slug } = await params;
@@ -67,7 +66,6 @@ export async function generateMetadata({
       description: 'Diese Seite konnte leider nicht gefunden werden.',
     };
   }
-
 
   return {
     title: post.title,

@@ -16,7 +16,6 @@ tags:
   - Mehrsprachigkeit
 ---
 
-
 # Führung von Geschäfts- und Privatkorrespondenz aller Art inkl. Übersetzungen
 
 Sie haben vor lauter Arbeit keine Zeit mehr für bürokratische Notwendigkeiten? Sie sind sich unsicher, wie Sie Anfragen stellen, Reklamationen formulieren oder wie Sie Anträge ausfüllen? Sie sind der deutschen Sprache nicht mächtig genug für Verhandlungen mit Behörden? Wir übernehmen jegliche private und geschäftliche Korrespondenz:

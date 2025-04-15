@@ -16,7 +16,6 @@ tags:
   - Unternehmensberatung
 ---
 
-
 # Kalkulationen aller Art
 
 Finanzkalkulationen bieten die Basis für ein erfolgreiches Controlling, verbesserte

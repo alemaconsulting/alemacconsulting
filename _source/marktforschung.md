@@ -16,7 +16,6 @@ tags:
   - Unternehmensberatung
 ---
 
-
 # Marktforschung
 
 Sie wollen ein neues Produkt auf den Markt bringen? Eine neue Zielgruppe ansprechen? Sie
