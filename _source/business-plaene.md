@@ -1,11 +1,12 @@
 ---
 slug: business-plaene
-title: "Business-Pläne"
+title: 'Business-Pläne'
 date: '2024-04-03'
 weight: 40
-author: "tedzury"
+author: 'tedzury'
 description: 'Business-Pläne'
 ---
+
 # Business-Pläne
 
 Die Gründung eines Unternehmens oder der Beginn eines neuen Projektes erfordert eine
@@ -27,6 +28,5 @@ Kontrollinstrument.
 - Neue Projekte
 - Krediterhaltung bei Banken
 - Große Einkäufe
-
 
 Mit uns können Sie Ihre Ideen verwirklichen!

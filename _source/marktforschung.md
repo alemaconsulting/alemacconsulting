@@ -1,10 +1,10 @@
 ---
 slug: marktforschung
-title: "Marktforschung"
+title: 'Marktforschung'
 date: '2024-04-03'
 weight: 70
-author: "tedzury"
-description: "Marktforschung"
+author: 'tedzury'
+description: 'Marktforschung'
 ---
 
 # Marktforschung
@@ -14,9 +14,7 @@ wissen nicht, wie Sie das Marketing für Ihr neues Unternehmen angehen sollen? W
 erforschen den Markt für Sie und analysieren Ihr Unternehmen aus Kundenperspektive –
 effizient und zielgerichtet.
 
-
 #### Bleiben Sie durch unsere individuelle Betreuung mit Ihren Kunden in Kontakt und lernen Sie, ihre Bedürfnisse zu verstehen. Zu unseren Leistungen gehören:
-
 
 - Produktforschung und Produktanalyse
 - Branchenanalyse

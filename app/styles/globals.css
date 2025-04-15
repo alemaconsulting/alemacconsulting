@@ -1,0 +1,80 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-surface-light: hsla(210, 56%, 98%, 1); /* gradBacking */
+  --color-text-primary: hsla(216, 28%, 22%, 1); /* primeText */
+  --color-border-base: hsla(0, 0%, 74%, 1); /* borderGrey */
+  --color-info-muted: hsla(200, 61%, 86%, 1); /* paleBlue */
+  --color-primary: hsla(207, 56%, 52%, 1); /* accentBlue */
+  --color-primary-bright: hsla(198, 100%, 44%, 1); /* brightBlue */
+  --color-accent-soft: hsla(285, 56%, 78%, 1); /* accentPink */
+  --color-success: hsla(134, 87%, 52%, 1); /* checkGreen */
+}
+
+@layer base {
+  body {
+    @apply leading-relaxed;
+  }
+
+  header {
+    @apply border-border-base bg-surface-light flex w-full items-center justify-between rounded-lg border-2 p-4 md:px-8 md:py-3 lg:py-5;
+  }
+
+  footer {
+    @apply border-border-base flex w-full items-center justify-center gap-3 border-t-2 pt-2 text-sm font-bold sm:gap-[175px] sm:text-base md:pt-4 lg:gap-[360px] lg:text-lg;
+  }
+}
+
+@layer components {
+  .contentUL {
+    @apply mt-3 ml-6 list-disc text-base sm:ml-9 sm:text-lg sm:font-extrabold;
+  }
+
+  .routeLink {
+    @apply hover:text-accent-soft block h-full w-full truncate text-xl leading-10 transition-all duration-300 hover:text-[21px];
+  }
+
+  .contentSectionWrapper {
+    @apply sm:border-border-base sm:bg-surface-light w-full py-5 font-bold sm:rounded-lg sm:border-2 sm:px-10 sm:py-4 xl:px-16 xl:py-8;
+  }
+
+  .h1Styles {
+    @apply m-5 text-center text-2xl lg:font-extrabold;
+  }
+
+  .h2Styles {
+    @apply m-5 text-center text-lg lg:font-extrabold;
+  }
+
+  .h3Styles {
+    @apply before:border-success relative m-5 text-lg font-extrabold before:absolute before:top-[6px] before:left-[-20px] before:h-[10px] before:w-[17px] before:rotate-[-50deg] before:rounded-sm before:border-b-[4px] before:border-l-[4px] before:content-[''] sm:ml-3 sm:text-2xl sm:before:top-[2px] sm:before:left-[-35px] sm:before:h-[15px] sm:before:w-[25px] sm:before:border-b-[5px] sm:before:border-l-[5px];
+  }
+
+  .h4Styles {
+    @apply m-5 text-xl font-extrabold;
+  }
+
+  .pStyles {
+    @apply m-5 text-lg lg:font-extrabold;
+  }
+}
+
+@layer utilities {
+  .bg-horizontal-gradient {
+    background-image: linear-gradient(
+      90deg,
+      var(--color-surface-light) 0%,
+      var(--color-info-muted) 15%,
+      var(--color-info-muted) 85%,
+      var(--color-surface-light) 100%
+    );
+  }
+  .bg-vertical-gradient {
+    background-image: linear-gradient(
+      180deg,
+      var(--color-surface-light) 0%,
+      var(--color-info-muted) 15%,
+      hsla(200, 69%, 71%, 1) 100%
+    );
+  }
+}

@@ -1,5 +1,4 @@
 'use client';
-
 import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
@@ -9,12 +8,12 @@ const BurgerIcon = () => {
 
   // Строим корректный путь
   const href = pathname ? `${pathname}?modal=true` : '/?modal=true';
-
+  // TODO: мне не нравится логика сокрытия в компоненте
   return (
     <Link className="block md:w-[33%] lg:hidden" href={href}>
       <Image
         className="ml-auto"
-        src="/assets/icons/Burger_icon.svg" // Абсолютный путь
+        src="/assets/icons/burger-icon.svg" // Абсолютный путь
         alt="Burger icon"
         width={24}
         height={24}

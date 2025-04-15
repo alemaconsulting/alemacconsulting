@@ -1,10 +1,10 @@
 ---
 slug: excel-kalkulation
-title: "Excel-Kalkulation"
+title: 'Excel-Kalkulation'
 date: '2024-04-03'
 weight: 50
-author: "tedzury"
-description: "Excel-Kalkulation"
+author: 'tedzury'
+description: 'Excel-Kalkulation'
 ---
 
 # Excel-Tabellenkalkulation
@@ -22,7 +22,6 @@ Projektes zu bewerten und Ihren potenziellen Einnahme-Überschuss und den GuV ei
 - Überblick über Einkaufs- und Verkaufszahlen
 - Auftragsabwicklung
 - Betriebsdatenpflege
-
 
 ### Überblick über Ihre Geldbewegungen
 

@@ -1,10 +1,10 @@
 ---
 slug: eng-english
-title: "Eng - English"
+title: 'Eng - English'
 date: '2024-04-03'
 weight: 90
-author: "andron13"
-description: "Eng - English"
+author: 'andron13'
+description: 'Eng - English'
 ---
 
 # Alema Consulting
@@ -24,7 +24,6 @@ Since 2012, we have been offering management consultancy in a wide range of busi
 - Global supplier search
 - Supplier management
 - Invitations to tender
-
 
 ### Calculations of all types
 
@@ -61,23 +60,23 @@ Since 2012, we have been offering management consultancy in a wide range of busi
 
 ### Business and private correspondence
 
-  - Forms
-  - Correspondence
-  - Business correspondence:
-    + Queries
-    + Complaints
-    + Claims
-    + Orders
-    + Negotiations
+- Forms
+- Correspondence
+- Business correspondence:
+  - Queries
+  - Complaints
+  - Claims
+  - Orders
+  - Negotiations
 
 ### Market research
 
-  - Product research and analysis
-  - Branch analysis
-  - Market analysis
-  - Marketing research
-  - Analysis of competitors
-  - Analysis of target groups
-  - Site/location analysis
+- Product research and analysis
+- Branch analysis
+- Market analysis
+- Marketing research
+- Analysis of competitors
+- Analysis of target groups
+- Site/location analysis
 
 <p>Website developed by <a title="developer andron13" href="https://andron13.de" target="_blank">andron13</a></p>

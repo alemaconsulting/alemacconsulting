@@ -1,6 +1,6 @@
 import { AtSymbolIcon, PhoneIcon } from '@heroicons/react/24/outline';
 
-import { CONTACT_PHONE_ONE, CONTACT_PHONE_TWO } from '@/shared/constants';
+import { CONTACT_PHONE_ONE, CONTACT_PHONE_TWO } from '@/app/shared/constants';
 
 const Footer = () => {
   return (

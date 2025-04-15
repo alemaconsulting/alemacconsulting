@@ -84,7 +84,7 @@ const sections: Section[] = [
 ].sort((a, b) => b.weight - a.weight);
 
 const Section: FC<Section> = ({ title, items }) => (
-  <section className="ml-5 mt-5">
+  <section className="mt-5 ml-5">
     <h3 className="h3Styles">{title}</h3>
     <ul className="contentUL">
       {items.map((item, index) => (
@@ -96,7 +96,7 @@ const Section: FC<Section> = ({ title, items }) => (
 
 const HomepageLayout: FC = () => {
   return (
-    <main className="contentSectionWrapper">
+    <main className="contentSectionWrapper bg-horizontal-gradient">
       <h1 className="text-center text-lg lg:font-extrabold">Beratungsangebot: Überblick</h1>
       <h2 className="mt-5 text-center text-lg lg:font-extrabold">
         Seit 2012 bieten wir Unternehmensberatung in verschiedenen Bereichen an:

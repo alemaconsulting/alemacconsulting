@@ -1,10 +1,10 @@
 ---
 slug: kontakt-impressum
-title: "Kontakt & Impressum"
+title: 'Kontakt & Impressum'
 date: '2024-04-03'
 weight: 110
-author: "tedzury"
-description: "Kontakt & Impressum"
+author: 'tedzury'
+description: 'Kontakt & Impressum'
 ---
 
 Alema Consulting
@@ -106,7 +106,6 @@ Die Betreiber dieser Seiten nehmen den Schutz Ihrer persönlichen Daten sehr ern
 behandeln Ihre personenbezogenen Daten vertraulich und entsprechend der gesetzlichen
 Datenschutzvorschriften sowie dieser Datenschutzerklärung.
 
-
 Wenn Sie diese Website benutzen, werden verschiedene personenbezogene Daten erhoben.
 Personenbezogene Daten sind Daten, mit denen Sie persönlich identifiziert werden können. Die
 vorliegende Datenschutzerklärung erläutert, welche Daten wir erheben und wofür wir sie
@@ -199,7 +198,6 @@ Verarbeitung von Daten zur Erfüllung eines Vertrags oder vorvertraglicher Maßn
 gestattet. Personenbezogene Daten über die Inanspruchnahme unserer Internetseiten
 (Nutzungsdaten) erheben, verarbeiten und nutzen wir nur, soweit dies erforderlich ist, um
 dem Nutzer die Inanspruchnahme des Dienstes zu ermöglichen oder abzurechnen.
-
 
 Die erhobenen Kundendaten werden nach Abschluss des Auftrags oder Beendigung der
 Geschäftsbeziehung gelöscht. Gesetzliche Aufbewahrungsfristen bleiben unberührt.
