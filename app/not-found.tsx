@@ -1,6 +1,6 @@
-import MainLayout from '@/layouts/main-layout';
-import { getAllPostsData } from '@/shared/helpers/getAllPostsData';
-import { resultObj } from '@/shared/types';
+import MainLayout from '@/app/components/layouts/main-layout';
+import { getAllPostsData } from '@/app/shared/helpers/getAllPostsData';
+import { resultObj } from '@/app/shared/types';
 
 export async function getAllPosts() {
   const allPostsData: resultObj[] = await getAllPostsData();
@@ -14,7 +14,7 @@ const Index = async () => {
   const linksData = await getAllPosts();
   return (
     <MainLayout linksData={linksData}>
-      <section className="contentSectionWrapper flex items-center text-center text-2xl">
+      <section className="bg-horizontal-gradient contentSectionWrapper flex items-center text-center text-2xl">
         <p>Leider gibt es keine solche Seite :(</p>
         <p>
           Versuchen Sie, zur vorhandenen Seite zu navigieren. Sie werden alle im Navigationsblock

@@ -1,11 +1,11 @@
 import { Metadata } from 'next';
 
-import MainLayout from '@/layouts/main-layout';
-import { defaultMetaObj } from '@/shared/constants';
-import { getAllPostsData } from '@/shared/helpers/getAllPostsData';
-import { getAllPostSlugs } from '@/shared/helpers/getAllPostsSlugs';
-import MdToHtml from '@/shared/helpers/mdToHtml';
-import { resultObj } from '@/shared/types';
+import MainLayout from '@/app/components/layouts/main-layout';
+import { defaultMetaObj } from '@/app/shared/constants';
+import { getAllPostsData } from '@/app/shared/helpers/getAllPostsData';
+import { getAllPostSlugs } from '@/app/shared/helpers/getAllPostsSlugs';
+import MdToHtml from '@/app/shared/helpers/mdToHtml';
+import { resultObj } from '@/app/shared/types';
 
 type LinksData = { slug: string; title: string }[];
 
@@ -63,7 +63,7 @@ export default async function ContentPage({ params }: { params: Promise<{ slug: 
 
   return (
     <MainLayout linksData={linksData as LinksData}>
-      <article className="contentSectionWrapper">
+      <article className="contentSectionWrapper bg-horizontal-gradient">
         <MdToHtml mdSource={pageContent} />
       </article>
     </MainLayout>

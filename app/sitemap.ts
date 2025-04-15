@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next';
 
-import { SITE_URL } from '@/shared/constants';
-import { getAllPostsData } from '@/shared/helpers/getAllPostsData';
+import { SITE_URL } from '@/app/shared/constants';
+import { getAllPostsData } from '@/app/shared/helpers/getAllPostsData';
 
 const homepage = {
 	url: SITE_URL,

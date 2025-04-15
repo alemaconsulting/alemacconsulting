@@ -5,7 +5,7 @@ import Title from './ui/title';
 
 const Header = () => {
   return (
-    <header>
+    <header className="bg-horizontal-gradient">
       <Title />
       <Logo />
       <BurgerIcon />

@@ -1,9 +1,9 @@
 ---
 slug: rus
-title: "Rus - русский"
+title: 'Rus - русский'
 date: '2024-04-03'
 weight: 100
-author: "tedzury"
+author: 'tedzury'
 description: 'Rus - русский'
 ---
 
@@ -80,6 +80,5 @@ description: 'Rus - русский'
 - Анализ конкурентоспособности и изучение конкурентов
 - Исследование целевой группы
 - Анализ местоположения
-
 
 <p>Website developed by <a title="создатель сайта andron13" href="https://andron13.de" target="_blank">andron13</a></p>

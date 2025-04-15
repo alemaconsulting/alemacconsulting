@@ -1,10 +1,10 @@
 ---
 slug: kalkulationen
-title: "Kalkulationen"
+title: 'Kalkulationen'
 date: '2024-04-03'
 weight: 30
-author: "tedzury"
-description: "Kalkulationen"
+author: 'tedzury'
+description: 'Kalkulationen'
 ---
 
 # Kalkulationen aller Art

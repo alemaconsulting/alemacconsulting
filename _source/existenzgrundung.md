@@ -1,10 +1,10 @@
 ---
 slug: existenzgrundung
-title: "Existenzgründung"
+title: 'Existenzgründung'
 date: '2024-04-03'
 weight: 10
-author: "tedzury"
-description: "Existenzgründung"
+author: 'tedzury'
+description: 'Existenzgründung'
 ---
 
 # Existenzgründung
