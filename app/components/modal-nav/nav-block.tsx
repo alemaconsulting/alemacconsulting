@@ -20,6 +20,7 @@ const NavBlock = ({ closeModal, linksData }: PropsType) => {
             'routeLink font-bold',
             isActiveLink(`/${link.slug}`) && 'text-primary-bright'
           )}
+          title={link.title}
         >
           {link.title}
         </Link>
@@ -35,12 +36,13 @@ const NavBlock = ({ closeModal, linksData }: PropsType) => {
     >
       <XMarkIcon
         onClick={closeModal}
-        className="absolute top-[20px] right-[20px] z-20 h-12 w-12 cursor-pointer"
+        className="text-primary hover:text-primary-bright/50 absolute top-5 right-5 z-20 h-8 w-8 cursor-pointer transition-transform hover:scale-110"
+        aria-label="Close modal"
       />
       <ul className="border-border-base mt-[72px] border-b-2">
         <li className="border-border-base h-11 w-full border-t-2 text-center">
           <Link
-            href="/public"
+            href="/"
             className={twMerge('routeLink font-bold', isActiveLink('/') && 'text-primary-bright')}
           >
             Alema Consulting

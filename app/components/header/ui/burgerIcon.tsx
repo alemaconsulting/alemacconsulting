@@ -1,5 +1,5 @@
 'use client';
-import Image from 'next/image';
+import { Squares2X2Icon } from '@heroicons/react/24/solid';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
@@ -11,13 +11,7 @@ const BurgerIcon = () => {
   // TODO: мне не нравится логика сокрытия в компоненте
   return (
     <Link className="block md:w-[33%] lg:hidden" href={href}>
-      <Image
-        className="ml-auto"
-        src="/assets/icons/burger-icon.svg" // Абсолютный путь
-        alt="Burger icon"
-        width={24}
-        height={24}
-      />
+      <Squares2X2Icon className="text-primary h-8 w-8" aria-hidden="true" />
     </Link>
   );
 };

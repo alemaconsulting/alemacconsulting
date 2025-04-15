@@ -33,7 +33,6 @@ const Navigation = ({ linksData }: PropsType) => {
             href="/"
             className={twMerge('routeLink', isActiveLink('/') && 'text-primary-bright')}
           >
-            {/*<Link href="/" className={`routeLink ${isActiveLink('/') ? 'text-primary-bright' : ''}`}>*/}
             Alema Consulting
           </Link>
         </li>
