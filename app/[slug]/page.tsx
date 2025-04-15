@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 
 import MainLayout from '@/app/components/layouts/main-layout';
-import { defaultMetaObj } from '@/app/shared/constants';
+import { SITE_URL } from '@/app/shared/constants';
 import { getAllPostsData } from '@/app/shared/helpers/getAllPostsData';
 import { getAllPostSlugs } from '@/app/shared/helpers/getAllPostsSlugs';
 import MdToHtml from '@/app/shared/helpers/mdToHtml';
@@ -14,25 +14,6 @@ export async function generateStaticParams() {
 }
 
 export const dynamicParams = false;
-
-export async function generateMetadata({
-  params,
-}: {
-  params: Promise<{ slug: string }>;
-}): Promise<Metadata> {
-  const { slug } = await params;
-  const allPostsData = await getAllPostsData();
-  const post = allPostsData.find((post) => post.slug === slug);
-
-  if (!post) {
-    return defaultMetaObj;
-  }
-
-  return {
-    title: post.title,
-    description: post.description,
-  };
-}
 
 async function getPostsData(slug: string) {
   try {
@@ -68,4 +49,48 @@ export default async function ContentPage({ params }: { params: Promise<{ slug: 
       </article>
     </MainLayout>
   );
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  const allPostsData = await getAllPostsData();
+  const post = allPostsData.find((post) => post.slug === slug);
+
+  if (!post) {
+    return {
+      title: 'Seite nicht gefunden | Alema Consulting',
+      description: 'Diese Seite konnte leider nicht gefunden werden.',
+    };
+  }
+
+  return {
+    title: post.title,
+    description: post.description || 'Professionelle Beratung und Expertise von Alema Consulting.',
+    keywords: (post.tags || []).filter(Boolean),
+    creator: post.author || 'Alema Consulting Team',
+    publisher: 'Alema Consulting',
+    icons: {
+      icon: '/assets/icons/favicon.ico',
+      apple: '/apple-icon.png',
+    },
+    openGraph: {
+      type: 'article',
+      title: post.title,
+      description: post.description || '',
+      siteName: 'Alema Consulting',
+      url: `${SITE_URL}${slug}`,
+      images: [
+        {
+          url: '/assets/opengraph-image.jpg',
+          width: 677,
+          height: 508,
+        },
+      ],
+      locale: 'de',
+    },
+  };
 }

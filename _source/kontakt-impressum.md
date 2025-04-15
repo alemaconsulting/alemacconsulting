@@ -3,8 +3,15 @@ slug: kontakt-impressum
 title: 'Kontakt & Impressum'
 date: '2024-04-03'
 weight: 110
-author: 'tedzury'
-description: 'Kontakt & Impressum'
+author: 'andron13'
+description: 'Kontaktinformationen, rechtliche Hinweise, Datenschutzerklärung und Impressum von Alema Consulting in Berlin.'
+tags:
+  - Kontakt
+  - Impressum
+  - Datenschutzerklärung
+  - Alema Consulting
+  - Rechtliches
+  - Unternehmensangaben
 ---
 
 Alema Consulting

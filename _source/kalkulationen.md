@@ -3,8 +3,17 @@ slug: kalkulationen
 title: 'Kalkulationen'
 date: '2024-04-03'
 weight: 30
-author: 'tedzury'
-description: 'Kalkulationen'
+author: 'andron13'
+description: 'Professionelle Kalkulationen aller Art – von Kredit- und Rentabilitätsrechnern bis zur Liquiditätsplanung für kurz- und langfristige Projekte.'
+tags:
+  - Kalkulationen
+  - Finanzplanung
+  - Rentabilitätsrechnung
+  - Liquiditätsplanung
+  - GuV
+  - EÜR
+  - Brutto-Netto-Rechner
+  - Unternehmensberatung
 ---
 
 # Kalkulationen aller Art
