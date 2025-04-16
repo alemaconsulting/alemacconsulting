@@ -1,5 +1,7 @@
 import { Metadata } from 'next';
 
+import Head from 'next/head';
+
 import MainLayout from '@/app/components/layouts/main-layout';
 import { SITE_URL } from '@/app/shared/constants';
 import { getAllPostsData } from '@/app/shared/helpers/getAllPostsData';
@@ -41,11 +43,26 @@ export default async function ContentPage({ params }: { params: Promise<{ slug: 
   const { slug } = await params;
   const { content, postMetadata, linksData } = await getPostsData(slug);
   const pageContent = content && postMetadata ? content : '<div>No such page...</div>';
+  const jsonLd = postMetadata
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'Dienstleistung',
+        name: postMetadata.title,
+        url: SITE_URL + slug,
+        description: postMetadata.description,
+      }
+    : null;
 
   return (
     <MainLayout linksData={linksData as LinksData}>
       <article className="contentSectionWrapper bg-horizontal-gradient">
         <MdToHtml mdSource={pageContent} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(jsonLd),
+          }}
+        />
       </article>
     </MainLayout>
   );
