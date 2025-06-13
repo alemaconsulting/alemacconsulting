@@ -1,11 +1,11 @@
 import { Metadata } from 'next';
 
-import MainLayout from '@/app/components/layouts/main-layout';
-import { SITE_URL } from '@/app/shared/constants';
-import { getAllPostsData } from '@/app/shared/helpers/getAllPostsData';
-import { getAllPostSlugs } from '@/app/shared/helpers/getAllPostsSlugs';
+import MainLayout from '@/app/components/layouts';
+import { getAllPostsData, getAllPostSlugs } from '@/app/shared/helpers';
 import MdToHtml from '@/app/shared/helpers/mdToHtml';
 import { resultObj } from '@/app/shared/types';
+
+import { generatePostMetadata } from './metadata';
 
 type LinksData = { slug: string; title: string }[];
 
@@ -14,6 +14,20 @@ export async function generateStaticParams() {
 }
 
 export const dynamicParams = false;
+
+export default async function ContentPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const { content, postMetadata, linksData } = await getPostsData(slug);
+  const pageContent = content && postMetadata ? content : '<div>No such page...</div>';
+
+  return (
+    <MainLayout linksData={linksData as LinksData}>
+      <article className="contentSectionWrapper bg-horizontal-gradient">
+        <MdToHtml mdSource={pageContent} />
+      </article>
+    </MainLayout>
+  );
+}
 
 async function getPostsData(slug: string) {
   try {
@@ -37,60 +51,11 @@ async function getPostsData(slug: string) {
   }
 }
 
-export default async function ContentPage({ params }: { params: Promise<{ slug: string }> }) {
-  const { slug } = await params;
-  const { content, postMetadata, linksData } = await getPostsData(slug);
-  const pageContent = content && postMetadata ? content : '<div>No such page...</div>';
-
-  return (
-    <MainLayout linksData={linksData as LinksData}>
-      <article className="contentSectionWrapper bg-horizontal-gradient">
-        <MdToHtml mdSource={pageContent} />
-      </article>
-    </MainLayout>
-  );
-}
-
 export async function generateMetadata({
   params,
 }: {
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
   const { slug } = await params;
-  const allPostsData = await getAllPostsData();
-  const post = allPostsData.find((post) => post.slug === slug);
-
-  if (!post) {
-    return {
-      title: 'Seite nicht gefunden | Alema Consulting',
-      description: 'Diese Seite konnte leider nicht gefunden werden.',
-    };
-  }
-
-  return {
-    title: post.title,
-    description: post.description || 'Professionelle Beratung und Expertise von Alema Consulting.',
-    keywords: (post.tags || []).filter(Boolean),
-    creator: post.author || 'Alema Consulting Team',
-    publisher: 'Alema Consulting',
-    icons: {
-      icon: '/assets/icons/favicon.ico',
-      apple: '/apple-icon.png',
-    },
-    openGraph: {
-      type: 'article',
-      title: post.title,
-      description: post.description || '',
-      siteName: 'Alema Consulting',
-      url: `${SITE_URL}${slug}`,
-      images: [
-        {
-          url: '/assets/opengraph-image.jpg',
-          width: 677,
-          height: 508,
-        },
-      ],
-      locale: 'de',
-    },
-  };
+  return await generatePostMetadata(slug);
 }

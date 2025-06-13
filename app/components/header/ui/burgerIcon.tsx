@@ -3,7 +3,7 @@ import { Squares2X2Icon } from '@heroicons/react/24/solid';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
-const BurgerIcon = () => {
+export const BurgerIcon = () => {
   const pathname = usePathname() || '';
 
   // Строим корректный путь
@@ -15,5 +15,3 @@ const BurgerIcon = () => {
     </Link>
   );
 };
-
-export default BurgerIcon;

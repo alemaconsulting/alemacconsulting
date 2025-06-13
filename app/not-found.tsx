@@ -1,3 +1,5 @@
+import { twMerge } from 'tailwind-merge';
+
 import MainLayout from '@/app/components/layouts/main-layout';
 import { getAllPostsData } from '@/app/shared/helpers/getAllPostsData';
 import { resultObj } from '@/app/shared/types';
@@ -10,20 +12,23 @@ export async function getAllPosts() {
   }));
 }
 
-const Index = async () => {
+export default async function NotFound() {
   const linksData = await getAllPosts();
   return (
     <MainLayout linksData={linksData}>
-      <section className="bg-horizontal-gradient contentSectionWrapper flex items-center text-center text-2xl">
-        <p>Leider gibt es keine solche Seite :(</p>
-        <p>
-          Versuchen Sie, zur vorhandenen Seite zu navigieren. Sie werden alle im Navigationsblock
-          auf der linken Seite aufgelistet, oder Wenn Sie ein Mobiltelefon/Tablet verwenden - im
-          Menü, das Sie durch Tippen auf Burger öffnen können Symbol in der rechten oberen Ecke.
+      <section
+        className={twMerge(
+          'flex flex-col gap-4',
+          'bg-horizontal-gradient contentSectionWrapper items-center'
+        )}
+      >
+        <p className="text-center text-2xl">Diese Seite existiert leider nicht :(</p>
+        <p className="font-medium">
+          Versuchen Sie, zu einer vorhandenen Seite zu navigieren. Alle verfügbaren Seiten sind im
+          Navigationsbereich auf der linken Seite aufgelistet. Falls Sie ein Mobilgerät oder Tablet
+          verwenden, finden Sie das Menü über das Burger-Symbol in der rechten oberen Ecke.
         </p>
       </section>
     </MainLayout>
   );
-};
-
-export default Index;
+}

@@ -8,7 +8,7 @@ type PropsType = {
   linksData: { slug: string; title: string }[];
 };
 
-const Navigation = ({ linksData }: PropsType) => {
+export const Navigation = ({ linksData }: PropsType) => {
   const pathName = usePathname();
   const isActiveLink = (slug: string) => pathName === slug;
   const mappedLinks = linksData.map((link) => {
@@ -41,5 +41,3 @@ const Navigation = ({ linksData }: PropsType) => {
     </nav>
   );
 };
-
-export default Navigation;

@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 import { CONTACT_PHONE_ONE, CONTACT_PHONE_TWO } from '@/app/shared/constants';
 
-const Footer = () => {
+export const Footer = () => {
   return (
     <footer className="py-6">
       <address className="text-text-primary flex flex-wrap items-center gap-4 text-sm not-italic">
@@ -35,5 +35,3 @@ const Footer = () => {
     </footer>
   );
 };
-
-export default Footer;

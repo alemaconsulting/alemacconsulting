@@ -1,9 +1,9 @@
-import BurgerIcon from './ui/burgerIcon';
-import Logo from './ui/logo';
-import Matrix from './ui/matrix';
-import Title from './ui/title';
+import { BurgerIcon } from './ui/burgerIcon';
+import { Logo } from './ui/logo';
+import { Matrix } from './ui/matrix';
+import { Title } from './ui/title';
 
-const Header = () => {
+export const Header = () => {
   return (
     <header className="bg-horizontal-gradient">
       <Title />
@@ -13,5 +13,3 @@ const Header = () => {
     </header>
   );
 };
-
-export default Header;
