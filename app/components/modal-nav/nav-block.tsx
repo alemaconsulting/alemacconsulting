@@ -8,7 +8,7 @@ type PropsType = {
   linksData: { slug: string; title: string }[];
 };
 
-const NavBlock = ({ closeModal, linksData }: PropsType) => {
+export const NavBlock = ({ closeModal, linksData }: PropsType) => {
   const pathName = usePathname();
   const isActiveLink = (slug: string) => pathName === slug;
   const mappedLinks = linksData.map((link) => {
@@ -53,5 +53,3 @@ const NavBlock = ({ closeModal, linksData }: PropsType) => {
     </nav>
   );
 };
-
-export default NavBlock;

@@ -1,5 +1,5 @@
 import Frontpage from '@/app/components/frontpage';
-import MainLayout from '@/app/components/layouts/main-layout';
+import MainLayout from '@/app/components/layouts';
 import { getAllPostsData } from '@/app/shared/helpers/getAllPostsData';
 import { resultObj } from '@/app/shared/types';
 

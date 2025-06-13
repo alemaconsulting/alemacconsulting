@@ -5,7 +5,7 @@ type PropsType = {
   children?: JSX.Element;
 };
 
-const ModalOverlay = ({ children, closeModal }: PropsType) => {
+export const ModalOverlay = ({ children, closeModal }: PropsType) => {
   function closeHandler(e: MouseEvent<HTMLDialogElement> | KeyboardEvent<HTMLDialogElement>) {
     if ((e.target as HTMLButtonElement).hasAttribute('data-overlay')) closeModal();
   }
@@ -20,5 +20,3 @@ const ModalOverlay = ({ children, closeModal }: PropsType) => {
     </dialog>
   );
 };
-
-export default ModalOverlay;

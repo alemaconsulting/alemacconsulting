@@ -2,10 +2,7 @@ import { ReactElement, Suspense } from 'react';
 
 import { twMerge } from 'tailwind-merge';
 
-import Footer from '@/app/components/footer/footer';
-import Header from '@/app/components/header/header';
-import ModalNav from '@/app/components/modal-nav/modal-nav';
-import Navigation from '@/app/components/nav/navigation';
+import { Footer, Header, ModalNav, Navigation } from '@/app/components';
 
 type PropsType = {
   children: ReactElement;
