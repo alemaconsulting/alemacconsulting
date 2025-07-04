@@ -3,7 +3,7 @@
   "description": "Alema Consulting",
   "website": "https://alema-consulting.de/",
   "repository": "https://github.com/alemaconsulting/alemacconsulting",
-  "version": "0.1.0",
+  "version": "1.1.1",
   "author": "andron13",
   "private": true,
   "scripts": {
@@ -13,6 +13,7 @@
     "lint": "next lint",
     "lint:fix": "next lint --fix",
     "format:fix": "prettier --write \"./**/*.{ts,tsx,css,mjs,json,js,md}\"",
+    "fix:all": "npm run typecheck && npm run format:fix && npm run lint:fix",
     "typecheck": "tsc --noEmit",
     "ncu:check": "ncu",
     "ncu:update": "ncu --interactive",

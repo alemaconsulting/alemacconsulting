@@ -6,7 +6,6 @@ import MdToHtml from '@/app/shared/helpers/mdToHtml';
 import { resultObj } from '@/app/shared/types';
 
 import { generatePostMetadata } from './metadata';
-
 type LinksData = { slug: string; title: string }[];
 
 export async function generateStaticParams() {
