@@ -1,5 +1,6 @@
 import { dirname } from 'path';
 import { fileURLToPath } from 'url';
+
 import { FlatCompat } from '@eslint/eslintrc';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -10,13 +11,28 @@ const compat = new FlatCompat({
 });
 
 const eslintConfig = [
-  ...compat.extends(
-    'next/core-web-vitals',
-    'next/typescript',
-    'prettier' // Добавляем prettier конфиг
-  ),
+  ...compat.extends('next/core-web-vitals', 'next/typescript', 'prettier'),
   {
     rules: {
+      'import/order': [
+        'error',
+        {
+          'newlines-between': 'always-and-inside-groups',
+          groups: [
+            'builtin',
+            'external',
+            'internal',
+            ['parent', 'sibling'],
+            'object',
+            'type',
+            'index',
+          ],
+          alphabetize: {
+            order: 'asc',
+            caseInsensitive: true,
+          },
+        },
+      ],
       // Форматирование и стиль
       'object-curly-spacing': ['error', 'always'],
       'comma-dangle': ['error', 'only-multiline'],
@@ -59,13 +75,10 @@ const eslintConfig = [
       // Общие правила
       'no-console': 'warn',
       'no-debugger': 'warn',
-      'no-unused-vars': 'off', // Отключаем базовое правило в пользу TS версии
+      'no-unused-vars': 'off',
       'prefer-const': 'warn',
       'no-var': 'error',
       eqeqeq: 'warn',
-
-      // Убираем специфичные правила плагинов, которые могут не работать
-      // без явного подключения плагинов в flat config
     },
   },
 ];

@@ -1,12 +1,10 @@
 import { Nunito } from 'next/font/google';
 import { ReactNode } from 'react';
-
 import { twMerge } from 'tailwind-merge';
 
 import { defaultMetaObj } from '@/app/shared/constants';
 
 import type { Metadata, Viewport } from 'next';
-
 import '@/app/styles/globals.css';
 
 const nunito = Nunito({
