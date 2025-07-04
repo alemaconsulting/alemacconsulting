@@ -13,6 +13,7 @@
     "lint": "next lint",
     "lint:fix": "next lint --fix",
     "format:fix": "prettier --write \"./**/*.{ts,tsx,css,mjs,json,js,md}\"",
+    "fix:all": "npm run typecheck && npm run format:fix && npm run lint:fix",
     "typecheck": "tsc --noEmit",
     "ncu:check": "ncu",
     "ncu:update": "ncu --interactive",
