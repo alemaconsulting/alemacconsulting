@@ -1,5 +1,5 @@
-import parseMetadata from './parseMetadata';
-import processFiles from './processFiles';
+import { parseMetadata, processFiles } from '@/app/shared/helpers';
+
 import { CONTENT_FOLDER } from '../constants';
 
 export async function getAllPostSlugs() {

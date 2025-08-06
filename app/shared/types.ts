@@ -1,15 +1,15 @@
-export type resultObj = {
-	title: string;
-	description: string;
-	date: string;
-	author: string;
-	weight: number;
+export interface postData {
 	content: string;
+	postMetadata: Omit<resultObject, 'content'>;
+}
+
+export interface resultObject {
+	author: string;
+	content: string;
+	date: string;
+	description: string;
 	slug: string;
 	tags?: string[];
-};
-
-export type postData = {
-	postMetadata: Omit<resultObj, 'content'>;
-	content: string;
-};
+	title: string;
+	weight: number;
+}

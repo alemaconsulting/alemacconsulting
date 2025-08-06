@@ -1,15 +1,14 @@
 import { ReactElement, Suspense } from 'react';
-
 import { twMerge } from 'tailwind-merge';
 
 import { Footer, Header, ModalNav, Navigation } from '@/app/components';
 
-type PropsType = {
+interface PropertiesType {
   children: ReactElement;
   linksData: { slug: string; title: string }[];
-};
+}
 
-const MainLayout = ({ children, linksData }: PropsType) => {
+const MainLayout = ({ children, linksData }: PropertiesType) => {
   return (
     <>
       <div

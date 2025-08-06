@@ -1,34 +1,33 @@
 import { FC } from 'react';
 
 interface Section {
-  title: string;
   items: string[];
+  title: string;
   weight: number;
 }
 
 const sections: Section[] = [
   {
-    title: 'Existenzgründung',
     items: [
       'Beratung für Existenzgründer',
       'Unternehmensform',
       'Kalkulationen',
       'Erstellung von Business-Plänen',
     ],
+    title: 'Existenzgründung',
     weight: 100,
   },
   {
-    title: 'Produkt- und Lieferantensuche',
     items: [
       'Produktsuche',
       'Weltweite Lieferantensuche',
       'Lieferantenmanagement',
       'Ausschreibungen',
     ],
+    title: 'Produkt- und Lieferantensuche',
     weight: 90,
   },
   {
-    title: 'Kalkulationen aller Art',
     items: [
       'Finanzkalkulationen',
       'Kreditrechner',
@@ -42,34 +41,34 @@ const sections: Section[] = [
       'Brutto-Netto-Rechner für Arbeitgeber',
       'und viele andere auf Nachfrage',
     ],
+    title: 'Kalkulationen aller Art',
     weight: 80,
   },
   {
-    title: 'Business-Pläne',
     items: ['Geschäftsgründung', 'Neue Projekte', 'Krediterhaltung bei Banken', 'Große Einkäufe'],
+    title: 'Business-Pläne',
     weight: 70,
   },
   {
-    title: 'Präsentationen',
     items: ['für Kunden', 'für Verkauf und Vertrieb', 'für Investoren'],
+    title: 'Präsentationen',
     weight: 60,
   },
   {
-    title: 'Excel-Tabellenkalkulation',
     items: [
       'Organisation der Geschäftsprozesse',
       'Überblick über Ihre Geldbewegungen',
       'Nachhilfe',
     ],
+    title: 'Excel-Tabellenkalkulation',
     weight: 50,
   },
   {
-    title: 'Führung von Geschäfts- und Privatkorrespondenz',
     items: ['Ausfüllen von Formularen', 'Schriftverkehr', 'Geschäftliche Korrespondenz'],
+    title: 'Führung von Geschäfts- und Privatkorrespondenz',
     weight: 40,
   },
   {
-    title: 'Marktforschung',
     items: [
       'Produktforschung und Produktanalyse',
       'Branchenanalyse',
@@ -79,11 +78,12 @@ const sections: Section[] = [
       'Zielgruppenanalyse',
       'Standortanalyse',
     ],
+    title: 'Marktforschung',
     weight: 30,
   },
 ].sort((a, b) => b.weight - a.weight);
 
-const Section: FC<Section> = ({ title, items }) => (
+const Section: FC<Section> = ({ items, title }) => (
   <section className="mt-5 ml-5">
     <h3 className="h3Styles">{title}</h3>
     <ul className="contentUL">

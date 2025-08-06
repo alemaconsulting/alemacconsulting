@@ -1,0 +1,1 @@
+bash ./__my-configs/validate-commit.sh "$1"

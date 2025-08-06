@@ -10,41 +10,41 @@ export async function generatePostMetadata(slug: string): Promise<Metadata> {
 	// Если пост не найден
 	if (!post) {
 		return {
-			title: 'Seite nicht gefunden | Alema Consulting',
 			description: 'Diese Seite konnte leider nicht gefunden werden.',
+			title: 'Seite nicht gefunden | Alema Consulting',
 		};
 	}
 
 	// Базовые метаданные
 	const baseMetadata: Metadata = {
-		title: post.title,
+		creator: post.author || 'Alema Consulting Team',
 		description: post.description || 'Professionelle Beratung und Expertise von Alema Consulting.',
 		keywords: (post.tags || []).filter(Boolean),
-		creator: post.author || 'Alema Consulting Team',
 		publisher: 'Alema Consulting',
+		title: post.title,
 	};
 
 	// Иконки
 	const icons = {
-		icon: '/assets/icons/favicon.ico',
 		apple: '/apple-icon.png',
+		icon: '/assets/icons/favicon.ico',
 	};
 
 	// OpenGraph
 	const openGraph = {
-		type: 'article' as const,
-		title: post.title,
 		description: post.description || '',
-		siteName: 'Alema Consulting',
-		url: `${SITE_URL}${slug}`,
 		images: [
 			{
+				height: 508,
 				url: '/assets/opengraph-image.jpg',
 				width: 677,
-				height: 508,
 			},
 		],
 		locale: 'de',
+		siteName: 'Alema Consulting',
+		title: post.title,
+		type: 'article' as const,
+		url: `${SITE_URL}${slug}`,
 	};
 
 	return {
