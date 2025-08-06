@@ -11,7 +11,7 @@ export const BurgerIcon = () => {
   // TODO: мне не нравится логика сокрытия в компоненте
   return (
     <Link className="block md:w-[33%] lg:hidden" href={href}>
-      <Squares2X2Icon className="text-primary h-8 w-8" aria-hidden="true" />
+      <Squares2X2Icon aria-hidden="true" className="text-primary h-8 w-8" />
     </Link>
   );
 };

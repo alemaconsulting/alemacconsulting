@@ -2,10 +2,10 @@ import { twMerge } from 'tailwind-merge';
 
 import MainLayout from '@/app/components/layouts/main-layout';
 import { getAllPostsData } from '@/app/shared/helpers/getAllPostsData';
-import { resultObj } from '@/app/shared/types';
+import { resultObject } from '@/app/shared/types';
 
 export async function getAllPosts() {
-  const allPostsData: resultObj[] = await getAllPostsData();
+  const allPostsData: resultObject[] = await getAllPostsData();
   return allPostsData.map((post) => ({
     slug: post.slug,
     title: post.title,

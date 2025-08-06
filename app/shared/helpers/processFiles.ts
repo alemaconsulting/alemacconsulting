@@ -1,19 +1,17 @@
-import fs from 'fs';
+import fs from 'node:fs';
 
 import matter from 'gray-matter';
 
-import getAllFilesRecursively from './getAllFilesRecursively';
-import { resultObj, postData } from '../types';
+import getAllFilesRecursively from '@/app/shared/helpers/getAllFilesRecursively';
 
-const processFiles = async (
+import { postData, resultObject } from '../types';
+
+const processFiles = async <T extends Partial<resultObject> | postData>(
 	folder: string,
-	callback: (
-		matterResult: matter.GrayMatterFile<string>,
-		filepath: string
-	) => Partial<resultObj> | postData
-) => {
+	callback: (matterResult: matter.GrayMatterFile<string>, filepath: string) => T
+): Promise<T[]> => {
 	const filePaths = getAllFilesRecursively(folder);
-	const results: any[] = [];
+	const results: T[] = [];
 
 	filePaths.forEach((filepath: string) => {
 		const fileContents = fs.readFileSync(filepath, 'utf8');
@@ -21,6 +19,7 @@ const processFiles = async (
 		const result = callback(matterResult, filepath);
 		results.push(result);
 	});
+
 	return results;
 };
 

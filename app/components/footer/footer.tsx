@@ -10,14 +10,14 @@ export const Footer = () => {
         <div className="flex items-center gap-2">
           <PhoneIcon className="hover:text-primary h-5 w-5 transition-transform duration-200 lg:h-6 lg:w-6" />
           <Link
-            href={`tel:${CONTACT_PHONE_TWO}`}
             className="hover:text-primary-bright transition-colors duration-200"
+            href={`tel:${CONTACT_PHONE_TWO}`}
           >
             Mob. {CONTACT_PHONE_TWO}
           </Link>
           <Link
-            href={`tel:${CONTACT_PHONE_ONE}`}
             className="hover:text-primary-bright transition-colors duration-200"
+            href={`tel:${CONTACT_PHONE_ONE}`}
           >
             Tel. {CONTACT_PHONE_ONE}
           </Link>
@@ -25,8 +25,8 @@ export const Footer = () => {
         <div className="flex items-center gap-2">
           <AtSymbolIcon className="hover:text-primary h-5 w-5 transition-transform duration-200 lg:h-6 lg:w-6" />
           <Link
-            href="mailto:info@alema-consulting.de"
             className="hover:text-primary-bright transition-colors duration-200"
+            href="mailto:info@alema-consulting.de"
           >
             info@alema-consulting.de
           </Link>

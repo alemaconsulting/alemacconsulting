@@ -4,14 +4,10 @@ export const SITE_URL = 'https://alema-consulting.de/';
 export const CONTACT_PHONE_ONE = '03085629694';
 export const CONTACT_PHONE_TWO = '01703707021';
 
-export const matrix: string = '/assets/matrix.svg';
-export const logo: string = '/assets/logo-triangle.svg';
+export const matrix = '/assets/matrix.svg';
+export const logo = '/assets/logo-triangle.svg';
 
 export const defaultMetaObj = {
-	title: {
-		template: '%s | Alema Consulting – Unternehmensberatung in Berlin',
-		default: 'Alema Consulting – Unternehmensberatung in Berlin',
-	},
 	description:
 		'Alema Consulting bietet professionelle Unternehmensberatung in Berlin – Strategien für Wachstum, Digitalisierung und nachhaltigen Erfolg.',
 	icons: {
@@ -26,19 +22,23 @@ export const defaultMetaObj = {
 	],
 	metadataBase: new URL(SITE_URL),
 	openGraph: {
-		title: 'Alema Consulting – Unternehmensberatung in Berlin',
 		description:
 			'Professionelle Unternehmensberatung in Berlin. Alema Consulting unterstützt Unternehmen bei Strategie, Effizienzsteigerung und digitaler Transformation.',
-		url: SITE_URL,
-		siteName: 'Alema Consulting',
 		images: [
 			{
+				height: 508,
 				url: 'assets/opengraph-image.jpg',
 				width: 677,
-				height: 508,
 			},
 		],
 		locale: 'de',
+		siteName: 'Alema Consulting',
+		title: 'Alema Consulting – Unternehmensberatung in Berlin',
 		type: 'website',
+		url: SITE_URL,
+	},
+	title: {
+		default: 'Alema Consulting – Unternehmensberatung in Berlin',
+		template: '%s | Alema Consulting – Unternehmensberatung in Berlin',
 	},
 };

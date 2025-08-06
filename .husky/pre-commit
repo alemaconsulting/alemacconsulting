@@ -1,3 +1,1 @@
-npm run lint:fix
-npm run format:fix
-npm run typecheck
+bash ./__my-configs/validate-staged.sh

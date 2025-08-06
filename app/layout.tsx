@@ -1,18 +1,16 @@
 import { Nunito } from 'next/font/google';
 import { ReactNode } from 'react';
-
 import { twMerge } from 'tailwind-merge';
 
 import { defaultMetaObj } from '@/app/shared/constants';
 
 import type { Metadata, Viewport } from 'next';
-
 import '@/app/styles/globals.css';
 
 const nunito = Nunito({
-  weight: ['200', '300', '400', '500', '600', '700', '800', '900'],
   display: 'swap',
   subsets: ['latin', 'cyrillic'],
+  weight: ['200', '300', '400', '500', '600', '700', '800', '900'],
 });
 export const metadata: Metadata = {
   ...defaultMetaObj,
@@ -22,13 +20,13 @@ export const metadata: Metadata = {
 };
 // Viewport configuration
 export const viewport: Viewport = {
-  width: 'device-width',
   initialScale: 1,
   maximumScale: 5,
   themeColor: [
-    { media: '(prefers-color-scheme: light)', color: '#ffffff' },
-    { media: '(prefers-color-scheme: dark)', color: '#0f172a' },
+    { color: '#ffffff', media: '(prefers-color-scheme: light)' },
+    { color: '#0f172a', media: '(prefers-color-scheme: dark)' },
   ],
+  width: 'device-width',
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
