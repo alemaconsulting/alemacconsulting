@@ -1,10 +1,10 @@
 ---
 slug: business-plaene
-title: 'Business-Pläne'
-date: '2024-04-03'
+title: "Business-Pläne"
+date: "2024-04-03"
 weight: 40
-author: 'andron13'
-description: 'Business-Pläne sind essenziell für die erfolgreiche Gründung, Projektplanung und Finanzierung.'
+author: "andron13"
+description: "Business-Pläne sind essenziell für die erfolgreiche Gründung, Projektplanung und Finanzierung."
 tags:
   - Businessplan
   - Gründungsberatung

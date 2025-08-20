@@ -1,8 +1,8 @@
-'use client';
+"use client";
 
-import Link from 'next/link';
-import { usePathname } from 'next/navigation';
-import { twMerge } from 'tailwind-merge';
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { twMerge } from "tailwind-merge";
 
 interface PropertiesType {
   linksData: { slug: string; title: string }[];
@@ -13,9 +13,15 @@ export const Navigation = ({ linksData }: PropertiesType) => {
   const isActiveLink = (slug: string) => pathName === slug;
   const mappedLinks = linksData.map((link) => {
     return (
-      <li className="border-border-base h-11 w-full border-t-2 text-center" key={link.slug}>
+      <li
+        className="border-border-base h-11 w-full border-t-2 text-center"
+        key={link.slug}
+      >
         <Link
-          className={twMerge('routeLink', isActiveLink(`/${link.slug}`) && 'text-primary-bright')}
+          className={twMerge(
+            "routeLink",
+            isActiveLink(`/${link.slug}`) && "text-primary-bright",
+          )}
           href={link.slug}
           title={link.title}
         >
@@ -30,7 +36,10 @@ export const Navigation = ({ linksData }: PropertiesType) => {
       <ul className="border-border-base w-full border-b-2 font-extrabold">
         <li className="border-border-base h-11 w-full border-t-2 text-center">
           <Link
-            className={twMerge('routeLink', isActiveLink('/') && 'text-primary-bright')}
+            className={twMerge(
+              "routeLink",
+              isActiveLink("/") && "text-primary-bright",
+            )}
             href="/"
           >
             Alema Consulting

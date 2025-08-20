@@ -1,10 +1,10 @@
 ---
 slug: korrespondenz
-title: 'Korrespondenz'
-date: '2024-04-03'
+title: "Korrespondenz"
+date: "2024-04-03"
 weight: 80
-author: 'andron13'
-description: 'Professionelle Unterstützung bei privater und geschäftlicher Korrespondenz, Formularen, Schriftverkehr und Übersetzungen in mehreren Sprachen.'
+author: "andron13"
+description: "Professionelle Unterstützung bei privater und geschäftlicher Korrespondenz, Formularen, Schriftverkehr und Übersetzungen in mehreren Sprachen."
 tags:
   - Korrespondenz
   - Schriftverkehr

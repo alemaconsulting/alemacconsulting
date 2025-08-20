@@ -1,7 +1,7 @@
-import Image from 'next/image';
-import Link from 'next/link';
+import Image from "next/image";
+import Link from "next/link";
 
-import { logo } from '@/app/shared/constants';
+import { logo } from "@/app/shared/constants";
 
 export const Logo = () => {
   return (

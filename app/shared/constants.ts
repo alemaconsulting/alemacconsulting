@@ -1,44 +1,44 @@
-export const CONTENT_FOLDER = '_source';
+export const CONTENT_FOLDER = "_source";
 
-export const SITE_URL = 'https://alema-consulting.de/';
-export const CONTACT_PHONE_ONE = '03085629694';
-export const CONTACT_PHONE_TWO = '01703707021';
+export const SITE_URL = "https://alema-consulting.de/";
+export const CONTACT_PHONE_ONE = "03085629694";
+export const CONTACT_PHONE_TWO = "01703707021";
 
-export const matrix = '/assets/matrix.svg';
-export const logo = '/assets/logo-triangle.svg';
+export const matrix = "/assets/matrix.svg";
+export const logo = "/assets/logo-triangle.svg";
 
 export const defaultMetaObj = {
-	description:
-		'Alema Consulting bietet professionelle Unternehmensberatung in Berlin – Strategien für Wachstum, Digitalisierung und nachhaltigen Erfolg.',
-	icons: {
-		icon: '/assets/icons/favicon.ico',
-	},
-	keywords: [
-		'Unternehmensberatung Berlin',
-		'Business Consulting',
-		'Strategieberatung',
-		'Digitalisierung',
-		'Alema Consulting',
-	],
-	metadataBase: new URL(SITE_URL),
-	openGraph: {
-		description:
-			'Professionelle Unternehmensberatung in Berlin. Alema Consulting unterstützt Unternehmen bei Strategie, Effizienzsteigerung und digitaler Transformation.',
-		images: [
-			{
-				height: 508,
-				url: 'assets/opengraph-image.jpg',
-				width: 677,
-			},
-		],
-		locale: 'de',
-		siteName: 'Alema Consulting',
-		title: 'Alema Consulting – Unternehmensberatung in Berlin',
-		type: 'website',
-		url: SITE_URL,
-	},
-	title: {
-		default: 'Alema Consulting – Unternehmensberatung in Berlin',
-		template: '%s | Alema Consulting – Unternehmensberatung in Berlin',
-	},
+  description:
+    "Alema Consulting bietet professionelle Unternehmensberatung in Berlin – Strategien für Wachstum, Digitalisierung und nachhaltigen Erfolg.",
+  icons: {
+    icon: "/assets/icons/favicon.ico",
+  },
+  keywords: [
+    "Unternehmensberatung Berlin",
+    "Business Consulting",
+    "Strategieberatung",
+    "Digitalisierung",
+    "Alema Consulting",
+  ],
+  metadataBase: new URL(SITE_URL),
+  openGraph: {
+    description:
+      "Professionelle Unternehmensberatung in Berlin. Alema Consulting unterstützt Unternehmen bei Strategie, Effizienzsteigerung und digitaler Transformation.",
+    images: [
+      {
+        height: 508,
+        url: "assets/opengraph-image.jpg",
+        width: 677,
+      },
+    ],
+    locale: "de",
+    siteName: "Alema Consulting",
+    title: "Alema Consulting – Unternehmensberatung in Berlin",
+    type: "website",
+    url: SITE_URL,
+  },
+  title: {
+    default: "Alema Consulting – Unternehmensberatung in Berlin",
+    template: "%s | Alema Consulting – Unternehmensberatung in Berlin",
+  },
 };

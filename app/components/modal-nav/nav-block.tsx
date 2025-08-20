@@ -1,7 +1,7 @@
-import { XMarkIcon } from '@heroicons/react/24/solid';
-import Link from 'next/link';
-import { usePathname } from 'next/navigation';
-import { twMerge } from 'tailwind-merge';
+import { XMarkIcon } from "@heroicons/react/24/solid";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { twMerge } from "tailwind-merge";
 
 interface PropertiesType {
   closeModal: () => void;
@@ -13,11 +13,14 @@ export const NavBlock = ({ closeModal, linksData }: PropertiesType) => {
   const isActiveLink = (slug: string) => pathName === slug;
   const mappedLinks = linksData.map((link) => {
     return (
-      <li className="border-border-base h-11 w-full border-t-2 text-center" key={link.slug}>
+      <li
+        className="border-border-base h-11 w-full border-t-2 text-center"
+        key={link.slug}
+      >
         <Link
           className={twMerge(
-            'routeLink font-bold',
-            isActiveLink(`/${link.slug}`) && 'text-primary-bright'
+            "routeLink font-bold",
+            isActiveLink(`/${link.slug}`) && "text-primary-bright",
           )}
           href={link.slug}
           title={link.title}
@@ -31,7 +34,7 @@ export const NavBlock = ({ closeModal, linksData }: PropertiesType) => {
   return (
     <nav
       className={twMerge(
-        'bg-info-muted absolute top-0 right-0 z-20 w-[250px] cursor-auto rounded-tl-xl rounded-bl-xl px-6 py-3'
+        "bg-info-muted absolute top-0 right-0 z-20 w-[250px] cursor-auto rounded-tl-xl rounded-bl-xl px-6 py-3",
       )}
     >
       <XMarkIcon
@@ -42,7 +45,10 @@ export const NavBlock = ({ closeModal, linksData }: PropertiesType) => {
       <ul className="border-border-base mt-[72px] border-b-2">
         <li className="border-border-base h-11 w-full border-t-2 text-center">
           <Link
-            className={twMerge('routeLink font-bold', isActiveLink('/') && 'text-primary-bright')}
+            className={twMerge(
+              "routeLink font-bold",
+              isActiveLink("/") && "text-primary-bright",
+            )}
             href="/"
           >
             Alema Consulting

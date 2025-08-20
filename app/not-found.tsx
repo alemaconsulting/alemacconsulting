@@ -1,8 +1,8 @@
-import { twMerge } from 'tailwind-merge';
+import { twMerge } from "tailwind-merge";
 
-import MainLayout from '@/app/components/layouts/main-layout';
-import { getAllPostsData } from '@/app/shared/helpers/getAllPostsData';
-import { resultObject } from '@/app/shared/types';
+import MainLayout from "@/app/components/layouts/main-layout";
+import { getAllPostsData } from "@/app/shared/helpers/getAllPostsData";
+import { resultObject } from "@/app/shared/types";
 
 export async function getAllPosts() {
   const allPostsData: resultObject[] = await getAllPostsData();
@@ -18,15 +18,18 @@ export default async function NotFound() {
     <MainLayout linksData={linksData}>
       <section
         className={twMerge(
-          'flex flex-col gap-4',
-          'bg-horizontal-gradient contentSectionWrapper items-center'
+          "flex flex-col gap-4",
+          "bg-horizontal-gradient contentSectionWrapper items-center",
         )}
       >
-        <p className="text-center text-2xl">Diese Seite existiert leider nicht :(</p>
+        <p className="text-center text-2xl">
+          Diese Seite existiert leider nicht :(
+        </p>
         <p className="font-medium">
-          Versuchen Sie, zu einer vorhandenen Seite zu navigieren. Alle verfügbaren Seiten sind im
-          Navigationsbereich auf der linken Seite aufgelistet. Falls Sie ein Mobilgerät oder Tablet
-          verwenden, finden Sie das Menü über das Burger-Symbol in der rechten oberen Ecke.
+          Versuchen Sie, zu einer vorhandenen Seite zu navigieren. Alle
+          verfügbaren Seiten sind im Navigationsbereich auf der linken Seite
+          aufgelistet. Falls Sie ein Mobilgerät oder Tablet verwenden, finden
+          Sie das Menü über das Burger-Symbol in der rechten oberen Ecke.
         </p>
       </section>
     </MainLayout>

@@ -1,10 +1,10 @@
 ---
 slug: praesentationen
-title: 'Präsentationen'
-date: '2024-04-03'
+title: "Präsentationen"
+date: "2024-04-03"
 weight: 40
-author: 'andron13'
-description: 'Kreative, zielgruppengerechte Präsentationen für Kunden, Vertrieb und Investoren – professionell gestaltet und überzeugend umgesetzt.'
+author: "andron13"
+description: "Kreative, zielgruppengerechte Präsentationen für Kunden, Vertrieb und Investoren – professionell gestaltet und überzeugend umgesetzt."
 tags:
   - Präsentationen
   - Kundenpräsentation

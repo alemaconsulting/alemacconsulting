@@ -1,7 +1,4 @@
-import { BurgerIcon } from '@/app/components/header/ui/burgerIcon';
-import { Logo } from '@/app/components/header/ui/logo';
-import { Matrix } from '@/app/components/header/ui/matrix';
-import { Title } from '@/app/components/header/ui/title';
+import { BurgerIcon, Logo, Matrix, Title } from "@/app/components/header/ui";
 
 export const Header = () => {
   return (
