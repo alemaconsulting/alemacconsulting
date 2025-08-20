@@ -1,7 +1,7 @@
-import { AtSymbolIcon, PhoneIcon } from '@heroicons/react/24/outline';
-import Link from 'next/link';
+import { AtSymbolIcon, PhoneIcon } from "@heroicons/react/24/outline";
+import Link from "next/link";
 
-import { CONTACT_PHONE_ONE, CONTACT_PHONE_TWO } from '@/app/shared/constants';
+import { CONTACT_PHONE_ONE, CONTACT_PHONE_TWO } from "@/app/shared/constants";
 
 export const Footer = () => {
   return (

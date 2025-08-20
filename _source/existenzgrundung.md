@@ -1,10 +1,10 @@
 ---
 slug: existenzgrundung
-title: 'Existenzgründung'
-date: '2024-04-03'
+title: "Existenzgründung"
+date: "2024-04-03"
 weight: 10
-author: 'andron13'
-description: 'Beratung zur Existenzgründung – von der Wahl der Unternehmensform über Kalkulationen bis zur Erstellung eines vollständigen Business-Plans.'
+author: "andron13"
+description: "Beratung zur Existenzgründung – von der Wahl der Unternehmensform über Kalkulationen bis zur Erstellung eines vollständigen Business-Plans."
 tags:
   - Existenzgründung
   - Unternehmensberatung

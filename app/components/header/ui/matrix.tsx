@@ -1,6 +1,6 @@
-import Image from 'next/image';
+import Image from "next/image";
 
-import { matrix } from '@/app/shared/constants';
+import { matrix } from "@/app/shared/constants";
 
 export const Matrix = () => {
   return (

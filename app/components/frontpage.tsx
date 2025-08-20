@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import { FC } from "react";
 
 interface Section {
   items: string[];
@@ -9,76 +9,85 @@ interface Section {
 const sections: Section[] = [
   {
     items: [
-      'Beratung für Existenzgründer',
-      'Unternehmensform',
-      'Kalkulationen',
-      'Erstellung von Business-Plänen',
+      "Beratung für Existenzgründer",
+      "Unternehmensform",
+      "Kalkulationen",
+      "Erstellung von Business-Plänen",
     ],
-    title: 'Existenzgründung',
+    title: "Existenzgründung",
     weight: 100,
   },
   {
     items: [
-      'Produktsuche',
-      'Weltweite Lieferantensuche',
-      'Lieferantenmanagement',
-      'Ausschreibungen',
+      "Produktsuche",
+      "Weltweite Lieferantensuche",
+      "Lieferantenmanagement",
+      "Ausschreibungen",
     ],
-    title: 'Produkt- und Lieferantensuche',
+    title: "Produkt- und Lieferantensuche",
     weight: 90,
   },
   {
     items: [
-      'Finanzkalkulationen',
-      'Kreditrechner',
-      'Rentabilitätsrechner',
-      'Liquiditätsrechner',
-      'Anlage EKS',
-      'Einnahme-Überschuss-Rechner (EÜR)',
-      'Gewinn- und Verlustrechner (GuV)',
-      'Kalkulationen für kurz- bis langfristige Projekte',
-      'Brutto-Netto-Rechner für Arbeitnehmer',
-      'Brutto-Netto-Rechner für Arbeitgeber',
-      'und viele andere auf Nachfrage',
+      "Finanzkalkulationen",
+      "Kreditrechner",
+      "Rentabilitätsrechner",
+      "Liquiditätsrechner",
+      "Anlage EKS",
+      "Einnahme-Überschuss-Rechner (EÜR)",
+      "Gewinn- und Verlustrechner (GuV)",
+      "Kalkulationen für kurz- bis langfristige Projekte",
+      "Brutto-Netto-Rechner für Arbeitnehmer",
+      "Brutto-Netto-Rechner für Arbeitgeber",
+      "und viele andere auf Nachfrage",
     ],
-    title: 'Kalkulationen aller Art',
+    title: "Kalkulationen aller Art",
     weight: 80,
   },
   {
-    items: ['Geschäftsgründung', 'Neue Projekte', 'Krediterhaltung bei Banken', 'Große Einkäufe'],
-    title: 'Business-Pläne',
+    items: [
+      "Geschäftsgründung",
+      "Neue Projekte",
+      "Krediterhaltung bei Banken",
+      "Große Einkäufe",
+    ],
+    title: "Business-Pläne",
     weight: 70,
   },
   {
-    items: ['für Kunden', 'für Verkauf und Vertrieb', 'für Investoren'],
-    title: 'Präsentationen',
+    items: ["für Kunden", "für Verkauf und Vertrieb", "für Investoren"],
+    title: "Präsentationen",
     weight: 60,
   },
   {
     items: [
-      'Organisation der Geschäftsprozesse',
-      'Überblick über Ihre Geldbewegungen',
-      'Nachhilfe',
+      "Organisation der Geschäftsprozesse",
+      "Überblick über Ihre Geldbewegungen",
+      "Nachhilfe",
     ],
-    title: 'Excel-Tabellenkalkulation',
+    title: "Excel-Tabellenkalkulation",
     weight: 50,
   },
   {
-    items: ['Ausfüllen von Formularen', 'Schriftverkehr', 'Geschäftliche Korrespondenz'],
-    title: 'Führung von Geschäfts- und Privatkorrespondenz',
+    items: [
+      "Ausfüllen von Formularen",
+      "Schriftverkehr",
+      "Geschäftliche Korrespondenz",
+    ],
+    title: "Führung von Geschäfts- und Privatkorrespondenz",
     weight: 40,
   },
   {
     items: [
-      'Produktforschung und Produktanalyse',
-      'Branchenanalyse',
-      'Marktanalyse',
-      'Marketingforschung',
-      'Wettbewerbs-/Konkurrenzanalyse',
-      'Zielgruppenanalyse',
-      'Standortanalyse',
+      "Produktforschung und Produktanalyse",
+      "Branchenanalyse",
+      "Marktanalyse",
+      "Marketingforschung",
+      "Wettbewerbs-/Konkurrenzanalyse",
+      "Zielgruppenanalyse",
+      "Standortanalyse",
     ],
-    title: 'Marktforschung',
+    title: "Marktforschung",
     weight: 30,
   },
 ].sort((a, b) => b.weight - a.weight);
@@ -97,7 +106,9 @@ const Section: FC<Section> = ({ items, title }) => (
 const HomepageLayout: FC = () => {
   return (
     <main className="contentSectionWrapper bg-horizontal-gradient">
-      <h1 className="text-center text-lg lg:font-extrabold">Beratungsangebot: Überblick</h1>
+      <h1 className="text-center text-lg lg:font-extrabold">
+        Beratungsangebot: Überblick
+      </h1>
       <h2 className="mt-5 text-center text-lg lg:font-extrabold">
         Seit 2012 bieten wir Unternehmensberatung in verschiedenen Bereichen an:
       </h2>

@@ -1,10 +1,10 @@
 ---
 slug: excel-kalkulation
-title: 'Excel-Kalkulation'
-date: '2024-04-03'
+title: "Excel-Kalkulation"
+date: "2024-04-03"
 weight: 50
-author: 'andron13'
-description: 'Optimieren Sie Ihre Geschäftsprozesse und Finanzen mit professioneller Excel-Kalkulation – inklusive Nachhilfe, Analyse, Planung und Controlling.'
+author: "andron13"
+description: "Optimieren Sie Ihre Geschäftsprozesse und Finanzen mit professioneller Excel-Kalkulation – inklusive Nachhilfe, Analyse, Planung und Controlling."
 tags:
   - Excel-Kalkulation
   - Geschäftsprozessoptimierung

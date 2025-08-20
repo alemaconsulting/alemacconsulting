@@ -1,11 +1,11 @@
-import { Metadata } from 'next';
+import { Metadata } from "next";
 
-import { generatePostMetadata } from '@/app/[slug]/metadata';
+import { generatePostMetadata } from "@/app/[slug]/metadata";
 
-import MainLayout from '@/app/components/layouts';
-import { getAllPostsData, getAllPostSlugs } from '@/app/shared/helpers';
-import MdToHtml from '@/app/shared/helpers/mdToHtml';
-import { resultObject } from '@/app/shared/types';
+import MainLayout from "@/app/components/layouts";
+import { getAllPostsData, getAllPostSlugs } from "@/app/shared/helpers";
+import MdToHtml from "@/app/shared/helpers/mdToHtml";
+import { resultObject } from "@/app/shared/types";
 
 type LinksData = { slug: string; title: string }[];
 
@@ -15,10 +15,15 @@ export async function generateStaticParams() {
 
 export const dynamicParams = false;
 
-export default async function ContentPage({ params }: { params: Promise<{ slug: string }> }) {
+export default async function ContentPage({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
   const { slug } = await params;
   const { content, linksData, postMetadata } = await getPostsData(slug);
-  const pageContent = content && postMetadata ? content : '<div>No such page...</div>';
+  const pageContent =
+    content && postMetadata ? content : "<div>No such page...</div>";
 
   return (
     <MainLayout linksData={linksData as LinksData}>
@@ -50,7 +55,7 @@ async function getPostsData(slug: string) {
     const post = allPostsData.find((post) => post.slug === slug);
 
     if (!post) {
-      throw new Error('No post!');
+      throw new Error("No post!");
     }
 
     const { content, ...postMetadata } = post;

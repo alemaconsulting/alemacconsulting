@@ -1,13 +1,13 @@
-'use client';
-import { Squares2X2Icon } from '@heroicons/react/24/solid';
-import Link from 'next/link';
-import { usePathname } from 'next/navigation';
+"use client";
+import { Squares2X2Icon } from "@heroicons/react/24/solid";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export const BurgerIcon = () => {
-  const pathname = usePathname() || '';
+  const pathname = usePathname() || "";
 
   // Строим корректный путь
-  const href = pathname ? `${pathname}?modal=true` : '/?modal=true';
+  const href = pathname ? `${pathname}?modal=true` : "/?modal=true";
   // TODO: мне не нравится логика сокрытия в компоненте
   return (
     <Link className="block md:w-[33%] lg:hidden" href={href}>

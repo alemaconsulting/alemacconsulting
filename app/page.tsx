@@ -1,7 +1,7 @@
-import Frontpage from '@/app/components/frontpage';
-import MainLayout from '@/app/components/layouts';
-import { getAllPostsData } from '@/app/shared/helpers/getAllPostsData';
-import { resultObject } from '@/app/shared/types';
+import Frontpage from "@/app/components/frontpage";
+import MainLayout from "@/app/components/layouts";
+import { getAllPostsData } from "@/app/shared/helpers/getAllPostsData";
+import { resultObject } from "@/app/shared/types";
 
 async function getAllPosts() {
   const allPostsData: resultObject[] = await getAllPostsData();

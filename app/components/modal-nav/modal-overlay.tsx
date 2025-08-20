@@ -1,4 +1,4 @@
-import { JSX, KeyboardEvent, MouseEvent } from 'react';
+import { JSX, KeyboardEvent, MouseEvent } from "react";
 
 interface PropertiesType {
   children?: JSX.Element;
@@ -6,9 +6,11 @@ interface PropertiesType {
 }
 
 export const ModalOverlay = ({ children, closeModal }: PropertiesType) => {
-  function closeHandler(e: KeyboardEvent<HTMLDialogElement> | MouseEvent<HTMLDialogElement>) {
+  function closeHandler(
+    e: KeyboardEvent<HTMLDialogElement> | MouseEvent<HTMLDialogElement>,
+  ) {
     const target = e.target as HTMLElement;
-    if (target.dataset && Object.hasOwn(target.dataset, 'overlay')) {
+    if (target.dataset && Object.hasOwn(target.dataset, "overlay")) {
       closeModal();
     }
   }

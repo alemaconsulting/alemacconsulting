@@ -1,10 +1,10 @@
 ---
 slug: eng-english
-title: 'Eng - English'
-date: '2024-04-03'
+title: "Eng - English"
+date: "2024-04-03"
 weight: 90
-author: 'andron13'
-description: 'Business consulting in English: support for start-ups, product and supplier search, financial calculations, business plans, presentations, correspondence, and market analysis.'
+author: "andron13"
+description: "Business consulting in English: support for start-ups, product and supplier search, financial calculations, business plans, presentations, correspondence, and market analysis."
 tags:
   - Business Consulting
   - Start-up Support

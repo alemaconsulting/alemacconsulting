@@ -1,10 +1,10 @@
 ---
 slug: marktforschung
-title: 'Marktforschung'
-date: '2024-04-03'
+title: "Marktforschung"
+date: "2024-04-03"
 weight: 70
-author: 'andron13'
-description: 'Individuelle Marktforschung und Analysen: von Zielgruppen- und Standortanalyse bis hin zu Wettbewerbs- und Marketingforschung für Ihr Unternehmen.'
+author: "andron13"
+description: "Individuelle Marktforschung und Analysen: von Zielgruppen- und Standortanalyse bis hin zu Wettbewerbs- und Marketingforschung für Ihr Unternehmen."
 tags:
   - Marktforschung
   - Marktanalyse
