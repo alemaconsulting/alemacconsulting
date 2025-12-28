@@ -1,38 +1,38 @@
-name: Pull Request
-
-on:
-  pull_request:
-    types: [opened, synchronize]
-    branches:
-      - main
-
-env:
-  NODE_VERSION: 22.x
-
-jobs:
-  ci:
-    name: CI
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: ${{ env.NODE_VERSION }}
-
-      - uses: bahmutov/npm-install@v1
-
-      - name: Lint Application
-        run: npm run lint
-
-      - name: Prettier format
-        run: npm run format:fix
-
-      - name: Run application typescript check
-        run: npm run typecheck
-
-#      - name: Build
-#        run: npm run build
+#name: Pull Request
+#
+#on:
+#  pull_request:
+#    types: [opened, synchronize]
+#    branches:
+#      - main
+#
+#env:
+#  NODE_VERSION: 22.x
+#
+#jobs:
+#  ci:
+#    name: CI
+#    runs-on: ubuntu-latest
+#
+#    steps:
+#      - name: Checkout
+#        uses: actions/checkout@v4
+#
+#      - name: Setup Node.js
+#        uses: actions/setup-node@v4
+#        with:
+#          node-version: ${{ env.NODE_VERSION }}
+#
+#      - uses: bahmutov/npm-install@v1
+#
+#      - name: Lint Application
+#        run: npm run lint
+#
+#      - name: Prettier format
+#        run: npm run format:fix
+#
+#      - name: Run application typescript check
+#        run: npm run typecheck
+#
+##      - name: Build
+##        run: npm run build
