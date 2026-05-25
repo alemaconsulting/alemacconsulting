@@ -4,9 +4,10 @@ title: "Eng - English"
 date: "2024-04-03"
 weight: 90
 author: "andron13"
-description: "Business consulting in English: support for start-ups, product and supplier search, financial calculations, business plans, presentations, correspondence, and market analysis."
+description: "Business consulting in English: starting your own busines, payroll accounting and payroll administration, product and supplier search, financial calculations, business plans, presentations, correspondence, and market analysis."
 tags:
   - Business Consulting
+  - Payroll Accounting and Payroll Administration
   - Start-up Support
   - Financial Calculations
   - Business Plans
@@ -26,6 +27,18 @@ Since 2012, we have been offering management consultancy in a wide range of busi
 - Legal forms
 - Calculations
 - Preparation of business plans
+
+### Payroll Accounting and Payroll Administration
+
+- Gross-to-net payroll calculations
+- Payroll statements before and after deductions
+- Reporting and submissions to all relevant authorities and institutions: health insurance providers, the German Pension Insurance (DRV), etc.
+- For mini-job workers, working students, part-time employees, or full-time staff
+- Registration with the Employers’ Liability Insurance Association (Berufsgenossenschaft) and obtaining the company registration number
+- Registration with the Federal Employment Agency and obtaining the company operating number (Betriebsnummer)
+- Assistance with the activation of employer payroll tax credentials (ELStAM): support in obtaining employer payroll tax features for an existing tax number
+- Registration of (new) employees with the pension insurance system
+- Registration of (new) employees with health insurance providers
 
 ### Product and supplier search
 
